@@ -14,7 +14,7 @@ CAFU is a Galaxy-based bioinformatics framework for comprehensive assembly and f
         <td>References</td>
    </tr>
    <tr>
-        <td rowspan="7">Extraction of unmapped reads</td>    
+        <td rowspan="6">Extraction of unmapped reads</td>    
    </tr>
    <tr>
        <td>Quality Control</td> 
@@ -25,10 +25,10 @@ CAFU is a Galaxy-based bioinformatics framework for comprehensive assembly and f
        <td>[1]</td>
    </tr>
     <tr>
-        <td rowspan="4">Trim Raw Reads</td>
-        <td rowspan="4">Trim poly-A/T and low-quality reads</td>
-        <td rowspan="4">Raw RNA-seq data</td>
-        <td rowspan="4">High-quality RNA-seq data (Fastq)</td>
+        <td rowspan="3">Trim Raw Reads</td>
+        <td rowspan="3">Trim poly-A/T and low-quality reads</td>
+        <td rowspan="3">Raw RNA-seq data</td>
+        <td rowspan="3">High-quality RNA-seq data (Fastq)</td>
     </tr>
     <tr>
         <td>Fqtrim (version 0.9.7; https://ccb.jhu.edu/software/fqtrim/)</td>
