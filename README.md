@@ -6,12 +6,12 @@ CAFU is a Galaxy-based bioinformatics framework for comprehensive assembly and f
 
 <table>
     <tr>
-        <td>Functions</td>
-        <td>Applications</td>
-        <td>Input files</td>
-        <td>Main output files</td>
-        <td>Programs</td>
-        <td>References</td>
+        <td font-weight:bold>Functions</td>
+        <td font-weight:bold>Applications</td>
+        <td font-weight:bold>Input files</td>
+        <td font-weight:bold>Main output files</td>
+        <td font-weight:bold>Programs</td>
+        <td font-weight:bold>References</td>
    </tr>
     <tr>
         <td>Quality Control</td>
@@ -54,12 +54,12 @@ CAFU is a Galaxy-based bioinformatics framework for comprehensive assembly and f
 ### De novo transcript assembly of unmapped reads
 <table>
 <tr>
-        <td>Functions</td>
-        <td>Applications</td>
-        <td>Input files</td>
-        <td>Main output files</td>
-        <td>Programs</td>
-        <td>References</td>
+        <td font-weight:bold>Functions</td>
+        <td font-weight:bold>Applications</td>
+        <td font-weight:bold>Input files</td>
+        <td font-weight:bold>Main output files</td>
+        <td font-weight:bold>Programs</td>
+        <td font-weight:bold>References</td>
 </tr>
 <tr>
     <td rowspan="3">Assemble Unmapped Reads</td>
@@ -83,12 +83,12 @@ CAFU is a Galaxy-based bioinformatics framework for comprehensive assembly and f
 ### Evidence support of assembled transcripts
 <table>
 <tr>
-        <td>Functions</td>
-        <td>Applications</td>
-        <td>Input files</td>
-        <td>Main output files</td>
-        <td>Programs</td>
-        <td>References</td>
+        <td font-weight:bold>Functions</td>
+        <td font-weight:bold>Applications</td>
+        <td font-weight:bold>Input files</td>
+        <td font-weight:bold>Main output files</td>
+        <td font-weight:bold>Programs</td>
+        <td font-weight:bold>References</td>
 </tr>
 <tr>
     <td rowspan="3">Expression-level Evidence</td>
@@ -152,12 +152,12 @@ CAFU is a Galaxy-based bioinformatics framework for comprehensive assembly and f
 ### Species assignment of assembled transcripts
 <table>
 <tr>
-        <td>Functions</td>
-        <td>Applications</td>
-        <td>Input files</td>
-        <td>Main output files</td>
-        <td>Programs</td>
-        <td>References</td>
+        <td font-weight:bold>Functions</td>
+        <td font-weight:bold>Applications</td>
+        <td font-weight:bold>Input files</td>
+        <td font-weight:bold>Main output files</td>
+        <td font-weight:bold>Programs</td>
+        <td font-weight:bold>References</td>
 </tr>
 <tr>
         <td>SAT</td>
@@ -174,12 +174,12 @@ CAFU is a Galaxy-based bioinformatics framework for comprehensive assembly and f
 ### Sequence characterization of assembled transcripts
 <table>
 <tr>
-        <td>Functions</td>
-        <td>Applications</td>
-        <td>Input files</td>
-        <td>Main output files</td>
-        <td>Programs</td>
-        <td>References</td>
+        <td font-weight:bold>Functions</td>
+        <td font-weight:bold>Applications</td>
+        <td font-weight:bold>Input files</td>
+        <td font-weight:bold>Main output files</td>
+        <td font-weight:bold>Programs</td>
+        <td font-weight:bold>References</td>
 </tr>
 <tr>
         <td>Characterize Nucleic-acid Feature</td>
@@ -203,12 +203,12 @@ CAFU is a Galaxy-based bioinformatics framework for comprehensive assembly and f
 ### Expression profiles of assembled transcripts
 <table>
 <tr>
-        <td>Functions</td>
-        <td>Applications</td>
-        <td>Input files</td>
-        <td>Main output files</td>
-        <td>Programs</td>
-        <td>References</td>
+        <td font-weight:bold>Functions</td>
+        <td font-weight:bold>Applications</td>
+        <td font-weight:bold>Input files</td>
+        <td font-weight:bold>Main output files</td>
+        <td font-weight:bold>Programs</td>
+        <td font-weight:bold>References</td>
 </tr>
 <tr>
         <td>Analysis Condition Specificity</td>
@@ -244,12 +244,12 @@ CAFU is a Galaxy-based bioinformatics framework for comprehensive assembly and f
 ### Function annotation of assembled transcripts
 <table>
 <tr>
-        <td>Functions</td>
-        <td>Applications</td>
-        <td>Input files</td>
-        <td>Main output files</td>
-        <td>Programs</td>
-        <td>References</td>
+        <td font-weight:bold>Functions</td>
+        <td font-weight:bold>Applications</td>
+        <td font-weight:bold>Input files</td>
+        <td font-weight:bold>Main output files</td>
+        <td font-weight:bold>Programs</td>
+        <td font-weight:bold>References</td>
 </tr>
 <tr>
         <td rowspan="2">Co-expression and GO</td>
