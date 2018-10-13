@@ -1,2 +1,5 @@
-# CAFU
-CAFU is a galaxy workflow for comprehensive assembly and functional annotation of large-scale unmapped RNA-Seq data
+## CAFU
+CAFU is a Galaxy-based bioinformatics framework for comprehensive assembly and functional annotation of unmapped RNA-seq data from single- and mixed-species samples which integrates plenty of existing NGS analytical tools and our developed programs, and features an easy-to-use interface to manage, manipulate and most importantly, explore large-scale unmapped reads. Besides the common process of reads cleansing, reads mapping, unmapped reads generation and novel transcription assembly, CAFU optionally offers the multiple-level evidence analysis of assembled transcripts, the sequence and expression characteristics of assembled transcripts, and the functional exploration of assembled transcripts through gene co-expression analysis and genome-wide association analysis. Taking the advantages of machine learning (ML) technologies, CAFU also effectively addresses the challenge of classifying species-specific transcript assembled using unmapped reads from mixed-species samples. The CAFU project is hosted on GitHub (https://github.com/cma2015/CAFU), publically available via an Amazon Elastic Cloud disk image and a standardized Docker container.
+
+## Overview of functional modules in CAFU
+|Functional modules|Functions|Applications|Input files|Main output files|Programs|References|
