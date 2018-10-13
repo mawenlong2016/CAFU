@@ -22,26 +22,22 @@ CAFU is a Galaxy-based bioinformatics framework for comprehensive assembly and f
         <td>[1]</td>
    </tr>
     <tr>
-        <td rowspan="3">Trim Raw Reads</td>
-        <td rowspan="3">Trim poly-A/T and low-quality reads</td>
-        <td rowspan="3">Raw RNA-seq data</td>
-        <td rowspan="3">High-quality RNA-seq data (Fastq)</td>
-   </tr>
-    <tr>
+        <td rowspan="2">Trim Raw Reads</td>
+        <td rowspan="2">Trim poly-A/T and low-quality reads</td>
+        <td rowspan="2">Raw RNA-seq data</td>
+        <td rowspan="2">High-quality RNA-seq data (Fastq)</td>
         <td>Fqtrim (version 0.9.7; https://ccb.jhu.edu/software/fqtrim/)</td>
         <td>[2]</td>
-    </tr>
+   </tr>
     <tr>
         <td>Trimmomatic (version 0.36; http://www.usadellab.org/cms/?page=trimmomatic)</td>
         <td>[3]</td>
     </tr>
     <tr>
-        <td rowspan="4">Generate Unmapped Reads</td>
-        <td rowspan="4">Align trimmed reads and obtain unmapped reads</td>
-        <td rowspan="4">High-quality RNA-seq data; Reference sequences of corresponding species</td>
-        <td rowspan="4">Alignment results (BAM); Unmapped reads (Fastq)</td>
-    </tr>
-    <tr>
+        <td rowspan="3">Generate Unmapped Reads</td>
+        <td rowspan="3">Align trimmed reads and obtain unmapped reads</td>
+        <td rowspan="3">High-quality RNA-seq data; Reference sequences of corresponding species</td>
+        <td rowspan="3">Alignment results (BAM); Unmapped reads (Fastq)</td>
         <td>HISAT2 (version 2.1.0; https://ccb.jhu.edu/software/hisat2/index.shtml)</td>
         <td>[4]</td>
     </tr>
@@ -56,32 +52,3 @@ CAFU is a Galaxy-based bioinformatics framework for comprehensive assembly and f
  </table>
  
  
-### De novo transcript assembly of unmapped reads
-<table>
-<tr>
-        <td>Functions</td>
-        <td>Applications</td>
-        <td>Input files</td>
-        <td>Main output files</td>
-        <td>Programs</td>
-        <td>References</td>
-</tr>
-<tr>
-    <td rowspan="3">Assemble Unmapped Reads</td>
-    <td rowspan="3">De novo assemble unmapped reads, remove redundancy of transcript fragments and re-assemble transcript fragments</td>
-    <td rowspan="3">Unmapped reads</td>
-    <td rowspan="3">Assembled transcript sequences (Fasta)</td>
-</tr>
-<tr>
-    <td>Trinity (version 2.2.0; https://github.com/trinityrnaseq/trinityrnaseq/wiki)</td>
-    <td>[7]</td>
-    </tr>
-   <tr>
-    <td>CD-HIT-EST (version 4.6.8; http://weizhongli-lab.org/cd-hit/)</td>
-    <td>[8]</td>
-    </tr>
-    <tr>
-    <td>CAP3 (version 12/21/07; http://seq.cs.iastate.edu/cap3.html)</td>
-    <td>[9]</td>
-    </tr>
-</table>
