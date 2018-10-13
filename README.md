@@ -1,7 +1,7 @@
 [![Docker Repository on Quay](https://quay.io/repository/bgruening/galaxy-rna-workbench/status "Docker Repository on Quay")](https://hub.docker.com/r/malab/cafu/)
 
 ## CAFU
-CAFU is a Galaxy-based bioinformatics framework for comprehensive assembly and functional annotation of unmapped RNA-seq data from single- and mixed-species samples which integrates plenty of existing NGS analytical tools and our developed programs, and features an easy-to-use interface to manage, manipulate and most importantly, explore large-scale unmapped reads. Besides the common process of reads cleansing, reads mapping, unmapped reads generation and novel transcription assembly, CAFU optionally offers the multiple-level evidence analysis of assembled transcripts, the sequence and expression characteristics of assembled transcripts, and the functional exploration of assembled transcripts through gene co-expression analysis and genome-wide association analysis. Taking the advantages of machine learning (ML) technologies, CAFU also effectively addresses the challenge of classifying species-specific transcript assembled using unmapped reads from mixed-species samples. The CAFU project is hosted on GitHub (https://github.com/cma2015/CAFU), publically available via a standardized Docker image.
+- CAFU is a Galaxy-based bioinformatics framework for comprehensive assembly and functional annotation of unmapped RNA-seq data from single- and mixed-species samples which integrates plenty of existing NGS analytical tools and our developed programs, and features an easy-to-use interface to manage, manipulate and most importantly, explore large-scale unmapped reads. Besides the common process of reads cleansing, reads mapping, unmapped reads generation and novel transcription assembly, CAFU optionally offers the multiple-level evidence analysis of assembled transcripts, the sequence and expression characteristics of assembled transcripts, and the functional exploration of assembled transcripts through gene co-expression analysis and genome-wide association analysis. Taking the advantages of machine learning (ML) technologies, CAFU also effectively addresses the challenge of classifying species-specific transcript assembled using unmapped reads from mixed-species samples. The CAFU project is hosted on GitHub(https://github.com/cma2015/CAFU) and can be accessed from 210.27.96.13:4001. In addition, in order to enable larger-scale analysis, we also provided a standardized Docker image: [CAFU Docker image](https://hub.docker.com/r/malab/cafu/).
 
 ## Overview of functional modules in CAFU
 ### Extraction of unmapped reads
@@ -268,25 +268,25 @@ CAFU is a Galaxy-based bioinformatics framework for comprehensive assembly and f
 </table>
 
 ## CAFU Docker image installation
-### Docker installation and start ###
-#### For Windows (Test on Windows 10 Enterprise version): ####
+### Docker installation and start
+#### For Windows (Test on Windows 10 Enterprise version):
 * Download [Docker](<https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe>) for windows </br>
 * Double click the EXE file to open it;
 * Follow the wizard instruction and complete installation;
 * Search docker, select ___Docker for Windows___ in the search results and clickit.
-#### For Mac OS X (Test on macOS Sierra version 10.12.6 and macOS High Sierra version 10.13.3): ####
+#### For Mac OS X (Test on macOS Sierra version 10.12.6 and macOS High Sierra version 10.13.3):
 * Download [Docker](<https://download.docker.com/mac/stable/Docker.dmg>) for Mac os <br>
 * Double click the DMG file to open it;
 * Drag the docker into Applications and complete installation;
 * Start docker from Launchpad by click it.
-#### For Ubuntu (Test on Ubuntu 14.04 LTS and Ubuntu 16.04 LTS): ####
+#### For Ubuntu (Test on Ubuntu 14.04 LTS and Ubuntu 16.04 LTS):
 * Go to [Docker](<https://download.docker.com/linux/ubuntu/dists/>), choose your Ubuntuversion, browse to ___pool/stable___ and choose ___amd64, armhf, ppc64el or s390x.____ Download the ___DEB___ file for the Docker version you want to install;
 * Install Docker, supposing that the DEB file is download into following path:___"/home/docker-ce<version-XXX>~ubuntu_amd64.deb"___ </br>
 ```bash
 $ sudo dpkg -i /home/docker-ce<version-XXX>~ubuntu_amd64.deb      
 $ sudo apt-get install -f
 ```
- ### Verify if Docker is installed correctly ### 
+ ### Verify if Docker is installed correctly
 ----------------------------------------
    Once Docker installation is completed, we can run ____hello-world____ image to verify if Docker is installed correctly. Open terminal in Mac OS X and Linux operating system and open CMD for Windows operating system, then type the following command:
 ```bash
@@ -295,7 +295,7 @@ $ docker run hello-world
    **<font color =red>Note</font>:** root permission is required for Linux operating system.
    **<font color =red>Note</font>:** considering that differences between different computers may exist, please refer to [official installation manual](https://docs.docker.com/install) if instructions above don’t work.
 
-### CAFU installation from Docker Hub ###
+### CAFU installation from Docker Hub
 --------------------------------
   For Mac OS X and Linux operating systems, open the terminal, for Windows operating system, open CMD. Typing the following command:
 ```bash
