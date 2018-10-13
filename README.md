@@ -80,7 +80,7 @@ CAFU is a Galaxy-based bioinformatics framework for comprehensive assembly and f
 </table>
 
 
-
+### Evidence support of assembled transcripts
 <table>
 <tr>
         <td>Functions</td>
@@ -147,3 +147,121 @@ CAFU is a Galaxy-based bioinformatics framework for comprehensive assembly and f
 </tr>
 
 </table>
+
+
+### Species assignment of assembled transcripts
+<table>
+<tr>
+        <td>Functions</td>
+        <td>Applications</td>
+        <td>Input files</td>
+        <td>Main output files</td>
+        <td>Programs</td>
+        <td>References</td>
+</tr>
+<tr>
+        <td>SAT</td>
+        <td>Machine learning-based prediction of the original species of assembled transcripts</td>
+        <td>CDSs of two species; Assembled transcripts</td>
+        <td>SAT score</td>
+        <td>In-house scripts</td>
+        <td>Our study</td>
+</tr>
+</table>
+
+
+
+### Sequence characterization of assembled transcripts
+<table>
+<tr>
+        <td>Functions</td>
+        <td>Applications</td>
+        <td>Input files</td>
+        <td>Main output files</td>
+        <td>Programs</td>
+        <td>References</td>
+</tr>
+<tr>
+        <td>Characterize Nucleic-acid Feature</td>
+        <td>Explore the similarity between assembled and annotated transcripts in terms of the distribution of transcript length, exon length, G+C content</td>
+        <td>Confident transcripts; Reference transcripts</td>
+        <td>Diagnostic plots (barplot/density)</td>
+        <td>In-house scripts</td>
+        <td>Our study</td>
+</tr>
+<tr>
+        <td>Characterize Amino-acid Feature</td>
+        <td>Explore the similarity between assembled and annotated transcripts in terms of the distribution of amino acid-based features used in SAT</td>
+        <td>Confident transcripts; Reference transcripts</td>
+        <td>Diagnostic plots (barplot/density)</td>
+        <td>In-house scripts</td>
+        <td>Our study</td>
+</tr>
+</table>
+
+
+### Expression profiles of assembled transcripts
+<table>
+<tr>
+        <td>Functions</td>
+        <td>Applications</td>
+        <td>Input files</td>
+        <td>Main output files</td>
+        <td>Programs</td>
+        <td>References</td>
+</tr>
+<tr>
+        <td>Analysis Condition Specificity</td>
+        <td>Identify condition-specifically expressed transcripts</td>
+        <td>All transcripts; High-quality RNA-seq data; Sample information</td>
+        <td>Condition-specific table; Diagnostic plots(heatmap)</td>
+        <td>In-house scripts</td>
+        <td>Our study</td>
+</tr>
+<tr>
+        <td>Analysis Heterogeneous</td>
+        <td>Identify stablely expressed transcripts</td>
+        <td>Expression matrix; Sample information</td>
+        <td>Gini coefficient table; Diagnostic plot (dotplot)</td>
+        <td>In-house scripts</td>
+        <td>Our study</td>
+</tr>
+<tr>
+        <td rowspan="2">Analysis Differential Expression</td>
+        <td rowspan="2">Identify differentially expressed transcripts</td>
+        <td rowspan="2">All transcripts; High-quality RNA-seq data; Sample information</td>
+        <td rowspan="2">DE analysis table; Diagnostic plot (Volcano plot; Venn-daragram )</td>
+        <td>RSEM (version 1.3.0; https://deweylab.github.io/RSEM/) ; Bowtie2 (version 2.3.4.1; http://bowtie-bio.sourceforge.net/index.shtml)</td>
+        <td>[10, 11]</td>
+</tr>
+<tr>
+        <td>RSEM (version 1.3.0; https://deweylab.github.io/RSEM/) ; Bowtie2 (version 2.3.4.1; http://bowtie-bio.sourceforge.net/index.shtml)</td>
+        <td>[15]</td>
+</tr>
+</table>
+
+
+### Function annotation of assembled transcripts
+<table>
+<tr>
+        <td>Functions</td>
+        <td>Applications</td>
+        <td>Input files</td>
+        <td>Main output files</td>
+        <td>Programs</td>
+        <td>References</td>
+</tr>
+<tr>
+        <td rowspan="2">Co-expression and GO</td>
+        <td rowspan="2">Invesitgate the putative function of assembled transcripts through co-expression network and GO enrichment analysis</td>
+        <td rowspan="2">Invesitgate the putative function of assembled transcripts through co-expression network and GO enrichment analysis</td>
+        <td rowspan="2">Co-expression result tables; Diagnostic plot (Dendrogram); GO analysis table</td>
+        <td>WGCNA (version 1.63; https://cran.r-project.org/web/packages/WGCNA/index.html)</td>
+        <td>[16]</td>
+</tr>
+<tr>
+        <td>topGO (version 3.7; https://bioconductor.org/packages/release/bioc/html/topGO.html)</td>
+        <td>[17]</td>
+</tr>
+</table>
+
