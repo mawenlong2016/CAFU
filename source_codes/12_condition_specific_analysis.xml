@@ -1,0 +1,41 @@
+<tool id="condiSpecAnalysis" name="Analyze Condition Specificity">
+	<description></description>
+	<requirement type="package" version="1.2.0">getopt</requirement>
+	<command>
+			sed -i 's/\"//g' $expMat ;
+			Rscript /home/chenzhuod/galaxy/tools/CAFU/12_condition_specific.R --input1 $expMat --input2 $sampleInfo --input3 $TSVal --input4 $novelTransID --output1 $output_1 --output2 $output_2 ; 
+	</command>
+	<inputs>
+				<param name="expMat" type="data" label="Transcript expression value matrix"/>
+				<param name="sampleInfo" type="data" label="RNA-Seq sample condition information"/>
+				<param name="TSVal" type="text" value="0.8" label="TS score cut-off" />
+				<param name="novelTransID" type="data" value="0.8" label="Novel transcript ID" />
+	</inputs>
+	<stdio>
+	  <exit_code range="1:"  level="fatal" description="Error Analyzing Condition Specificity" />
+    </stdio>
+	<outputs>
+		<data name="output_1" format="txt" label="Condition specific transcritps information" />
+		<data name="output_2" format="pdf" label="Expression heatmap of condition-specific transcritps" />
+	</outputs>
+	<help>
+.. class:: infomark
+
+**What it does**
+		  
+For expression-level analysis, CAFU can provide condition-specificity analysis for assembled transcritps. Contidtion-specificity transcripts represent a set of transcripts highly expressed in some conditions.
+
+.. class:: infomark
+
+**Inputs**
+ * users should input the expression matrix and RNA-Seq sample condition information.
+
+.. class:: infomark
+
+**Outputs**
+ * Condition-specificity transcript ID.
+
+ * Heatmap of expression value of condition-specificity transcripts.
+
+    </help>
+</tool>

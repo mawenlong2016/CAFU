@@ -1,0 +1,94 @@
+<tool id="unmapReadsAssembly" name="Assemble Unmapped Reads">
+ 	<description></description>
+  <command>
+	  
+	mkdir -p /home/chenzhuod/galaxy/database/files/Assembly/Trinity ;
+	
+	#if $inputs.paired_or_single == "paired":
+		/home/chenzhuod/galaxy/tools/CAFU/trinityrnaseq-2.2.0/Trinity --no_bowtie --seqType fq --no_version_check --left $left_input_fq --right $right_input_fq --CPU ${thread} --max_memory 10G --output /home/chenzhuod/galaxy/database/files/Assembly/Trinity ;
+	#elif $inputs.paired_or_single == "single":
+		sed '1~4 s/$/\/1/g' $input_fq ;
+		/home/chenzhuod/galaxy/tools/CAFU/trinityrnaseq-2.2.0/Trinity --no_bowtie --seqType fq --no_version_check --single $input_fq --CPU ${thread} --max_memory 10G --output /home/chenzhuod/galaxy/database/files/Assembly/Trinity ;
+	#end if
+	
+	/home/chenzhuod/galaxy/tools/CAFU/cdhit-master/cd-hit-est -i /home/chenzhuod/galaxy/database/files/Assembly/Trinity/Trinity.fasta -o /home/chenzhuod/galaxy/database/files/Assembly/cd_hit_Res -c ${CDHIT.identity} -n ${CDHIT.wordLength} -T 2 ;
+	/home/chenzhuod/galaxy/tools/CAFU/CAP3/cap3 /home/chenzhuod/galaxy/database/files/Assembly/cd_hit_Res -p ${CAP3.overlapidentity} -o ${CAP3.overlaplength} ;
+	
+	cat /home/chenzhuod/galaxy/database/files/Assembly/cd_hit_Res.cap.contigs > ${assemblyTranscripts} ;
+	
+  </command>
+
+  <inputs>
+	  <conditional name="inputs">
+		<param name="paired_or_single" type="select" label="Paired or Single-end data?">
+			<option value="single">Single-end</option>
+			<option value="paired" selected="true">Paired-end</option>
+		</param>
+            <when value="single">
+                <param name="input_fq" type="data" label="Single-end reads" />
+            </when>
+			<when value="paired">
+				<param name="left_input_fq" type="data" label="Left/Forward strand reads" />
+				<param name="right_input_fq" type="data" label="Right/Reverse strand reads" />
+			</when>
+	</conditional>
+	
+	<section name="CDHIT" title="CD-HIT-EST parameters" expanded="True">
+			<param name="identity" type="float" value="0.9"  label="Similarity threshold" min=".75" max="1.0" help="(-c)"/>
+			<param name="wordLength" type="integer" value="8" label="Word size" min="4" max="10"/>
+	</section>
+	
+	<section name="CAP3" title="CAP3 parameters" expanded="True">
+			<param name="overlapidentity" type="integer" size="3" value="90" label="Overlap percent identity" help="-p option. must be > 65. 90 by default"/>
+			<param name="overlaplength" type="integer" size="3" value="40" label="Overlap length" help="-o option. must be > 15. 40 by default" />
+	</section>	
+	<param name="thread" type="integer" value="3" label="Threads"/>
+  </inputs>
+  <outputs>
+	  <data name="assemblyTranscripts" format="fasta" label="Unmapped reads de novo assembled transcripts"/>
+
+  </outputs>
+        <help>
+.. class:: infomark
+
+**What it does**
+		  
+In this function, CAFU operates unmapped reads de novo assembly through three steps, including de novo assembly of unmapped reads, remove redundancy of transcript fragments, and re-assembly transcript fragments. These steps are carried out using Trinity, CD-HIT-EST, and CAP3, respectively. The latter two steps (remove redundancy of transcript fragments, and re-assembly transcript fragments) need to be provided parameters.
+
+.. class:: infomark
+
+**Inputs**
+ * Unmapped reads generated from "Generate Unmapped Reads".
+
+.. class:: infomark
+
+**Outputs**
+ * de novo assembled transcripts.
+
+.. class:: infomark
+
+**Parameters**
+ * CD-HIT-EST parameters
+ 
+	Similarity threshold (-c): sequence identity threshold (0.9 in default)
+ 
+	Word size (-n): It is suggested to adjust word size in function of similarity threshold. 8,9 or 10  for threshold in [0.9;1.0] interval, 7 for [0.88;0.9], 6 for [0.85;0.88], 5 for [0.80;0.85], 4 for [0.75;0.8]
+ 
+ * CAP3 parameters
+ 
+	Specify overlap (-p): specify overlap percent identity cutoff N > 65 (90)
+ 
+	Overlap length (-o): specify overlap length cutoff > 15 (40)
+
+.. class:: infomark
+
+**Citation**
+ * Grabherr MG, Haas BJ, Yassour M et al. Full-length transcriptome assembly from RNA-Seq data without a reference genome. Nat Biotechnol 2011;29:644-652.
+ * Li W, Godzik A. Cd-hit: a fast program for clustering and comparing large sets of protein or nucleotide sequences. Bioinformatics 2006;22:1658-1659.
+ * Huang X, Madan A. CAP3: A DNA sequence assembly program. Genome Res 1999;9:868-877.
+
+
+    </help>
+  
+  
+</tool>

@@ -1,0 +1,67 @@
+<tool id="NAFeature" name="Characterize Nucleic-acid Feature">
+  <description></description>
+  <command>
+	#if $NAFType.length_or_GC == "transcriptLength"
+		/usr/bin/python /home/chenzhuod/galaxy/tools/CAFU/00_seq_len.py $novel_trans > $novel_len ;
+		/usr/bin/python /home/chenzhuod/galaxy/tools/CAFU/00_seq_len.py $ref_trans > $ref_len ;
+		Rscript /home/chenzhuod/galaxy/tools/CAFU/10_length_distribution.R --input1 $novel_len --input2 $ref_len --output $plot_transcripts_length ;
+	#elif $NAFType.length_or_GC == "GCContent"
+		perl /home/chenzhuod/galaxy/tools/CAFU/10_calculate_GC_content.pl $novel_trans $novel_GC ;
+		perl /home/chenzhuod/galaxy/tools/CAFU/10_calculate_GC_content.pl $novel_trans $ref_GC ;
+		Rscript /home/chenzhuod/galaxy/tools/CAFU/10_GC_distribution.R --input1 $ref_GC --input2 $novel_GC --output $plot_GC_content ;
+	#end if
+  </command>
+  <inputs>
+	<conditional name="NAFType">
+		  <param name="length_or_GC" type="select" label="Nucleic acid feature type?">
+			  <option value="transcriptLength" selected="true">Transcript_length</option>
+			  <option value="GCContent" selected="true">GC_content</option>
+		  </param>
+	  </conditional>	
+	  <param name="novel_trans" type="data" format="fasta" label="Assembled transcript sequences"/>
+	  <param name="ref_trans" type="data" format="fasta" label="Reference transcript sequences"/>
+  </inputs>
+  <stdio>
+	  <exit_code range="1:"  level="fatal" description="Error Running Characterize Nucleic-acid Feature" />
+  </stdio>
+  <outputs>
+	  <data name="novel_len" label="Assembled transcript length">
+			<filter>NAFType['length_or_GC'] == "transcriptLength"</filter>
+      </data>
+      <data name="ref_len" label="Reference transcript length">
+			<filter>NAFType['length_or_GC'] == "transcriptLength"</filter>
+      </data>
+      <data name="plot_transcripts_length" format="pdf" label="Comparison length distribution">
+			<filter>NAFType['length_or_GC'] == "transcriptLength"</filter>
+      </data>
+      <data name="novel_GC" label="Assembled transcript GC content">
+			<filter>NAFType['length_or_GC'] == "GCContent"</filter>
+      </data>
+      <data name="ref_GC" label="Reference transcript GC content">
+			<filter>NAFType['length_or_GC'] == "GCContent"</filter>
+      </data>
+      <data name="plot_GC_content" format="pdf" label="Comparison GC content distribution">
+			<filter>NAFType['length_or_GC'] == "GCContent"</filter>
+      </data>
+  </outputs>
+          <help>
+.. class:: infomark
+
+**What it does**
+		  
+In this function, CAFU provides two types of feature, transcript length and GC content to describe and compare between assembled and reference transcripts.
+
+.. class:: infomark
+
+**Inputs**
+ * Assembled transcript sequences.
+ * Reference transcript sequences.
+
+.. class:: infomark
+
+**Outputs**
+ * Feature of assembled and reference transcripts respectively.
+ * Comparison of feature of transcripts (plot). 
+  </help>
+  
+</tool>

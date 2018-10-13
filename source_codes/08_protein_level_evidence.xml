@@ -1,0 +1,62 @@
+<tool id="protein_level_evidence" name="Protein-level Evidence">
+  <description>
+  </description>
+  <command>
+		/usr/bin/python /home/chenzhuod/galaxy/tools/CAFU/CPC2-beta/bin/CPC2.py -i $transcripts_sequence -o $CPCRes ;
+
+		awk '$2>=${CPC2.ORF_Len}{ print $0 }' $CPCRes | awk '$6>=${CPC2.CPC_score}{ print $1 }' | sed "1d" > $confiTrans_ID ;
+		/home/chenzhuod/galaxy/tools/CAFU/seqtk/seqtk subseq $transcripts_sequence $confiTrans_ID > $confiTrans_sequence ;
+		/usr/bin/perl /home/chenzhuod/galaxy/tools/CAFU/PfamScan/pfam_scan.pl -fasta $confiTrans_sequence -dir /home/chenzhuod/galaxy/tools/CAFU/PfamScan -clan_overlap -cpu ${thread} -translate all > $confiTrans_pfam_Result ;
+	</command>
+  <inputs>
+      <param name="transcripts_sequence" type="data" format="fasta" label="De novo assembly transcript sequences" />
+      <section name="CPC2" title="CPC2 parameters" expanded="True">		
+			<param name="CPC_score" type="float" value="0.5" min="0" label="CPC2 score" />
+			<param name="ORF_Len" type="integer" value="100" min="0" label="Length of open reading frame (ORF)" />
+	  </section>
+	  <param name="thread" type="integer" value="3" label="Threads"/>
+  </inputs>
+  <stdio>
+	  <exit_code range="1:"  level="fatal" description="Error Running protein_level_evidence" />
+	</stdio>
+  <outputs>
+	  <data name="CPCRes" format="txt" label="CPC2 results" />
+	  <data name="confiTrans_ID" format="txt" label="Confidence transcript ID"/>
+	  <data name="confiTrans_sequence" hidden="TRUE" format="txt" label="Confidence transcript sequences"/>
+	  <data name="confiTrans_pfam_Result" format="txt" label="Confidence assembly transcript pfam results"/>
+  </outputs>
+          <help>
+.. class:: infomark
+
+**What it does**
+		  
+Since a transcript encodes a protein is direct evidence that the sequence is translated, CAFU further provide a level evidence to access the protein potential of a de novo assembly transcritps.
+
+.. class:: infomark
+
+**Inputs**
+ * de novo assembled transcritps.
+
+.. class:: infomark
+
+**Outputs**
+ * CPC2 results.
+ * Confident transcript ID.
+ * Pfam results (name as "Confidence assembly transcript pfam results").
+
+.. class:: infomark
+
+**Parameters**
+ * CPC2 score: the score of judge a transcript whether is coding or non-coding transcripts (0.5 in default). The more the score is, the more probably the transcript is coding.
+ 
+ * Length of open reading frame (ORF): the ORF length (100 in default).
+
+
+.. class:: infomark
+
+**Citation**
+ * Kang YJ, Yang DC, Kong L et al. CPC2: a fast and accurate coding potential calculator based on sequence intrinsic features. Nucleic Acids Res 2017;45:W12-W16.
+ * Finn RD, Bateman A, Clements J et al. Pfam: the protein families database. Nucleic Acids Res 2014;42:D222-D230.
+    </help>
+  
+</tool>

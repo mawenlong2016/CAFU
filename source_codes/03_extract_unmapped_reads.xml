@@ -1,0 +1,106 @@
+<tool id="unmapReadsGen" name="Extract Unmapped Reads">
+   <description></description>
+    <command>
+	mkdir -p /home/chenzhuod/galaxy/database/files/HISAT/genome_collection ;
+	#for t in $genome_collection:
+	  cat $t > /home/chenzhuod/galaxy/database/files/HISAT/genome_collection/${t.name} ;
+	#end for
+ 	cat $mapInfo > /home/chenzhuod/galaxy/database/files/HISAT/mapping-operation_info ;
+	#if $readtype.single_or_paired == "single-end"
+		#for t in $readtype.R1_collection:
+		  cat $t > /home/chenzhuod/galaxy/database/files/HISAT/${t.name} ;
+		#end for
+		bash /home/chenzhuod/galaxy/tools/CAFU/03_hisat_bam_to_unamp_SE.sh $unmap_reads_R1 ${HISAT.minIntron} ${HISAT.maxIntron} ${thread};
+	#elif $readtype.single_or_paired == "paired-end"
+		#for t in $readtype.R1_collection:
+		  cat $t > /home/chenzhuod/galaxy/database/files/HISAT/${t.name} ;
+		#end for
+		#for t in $readtype.R2_collection:
+		  cat $t > /home/chenzhuod/galaxy/database/files/HISAT/${t.name} ;
+		#end for    
+		bash /home/chenzhuod/galaxy/tools/CAFU/03_hisat_bam_to_unmap_PE.sh $unmap_reads_R1 $unmap_reads_R2 ${HISAT.minIntron} ${HISAT.maxIntron} ${thread};
+	#end if
+	</command>
+    <inputs>
+		<param name="genome_collection" type="data_collection" label="Reference genomes sequences collection" />
+		<conditional name="readtype">
+			<param name="single_or_paired" type="select" label="Single-end or paired-end reads?">
+				<option value="single-end" selected="true">Single-end</option>
+				<option value="paired-end" selected="true">Paired-end</option>
+			</param>
+			<when value="single-end">
+				<param name="R1_collection" type="data_collection" label="SE reads collection" />
+			</when>
+			<when value="paired-end">
+				<param name="R1_collection" type="data_collection" label="PE reads R1 collection" />
+				<param name="R2_collection" type="data_collection" label="PE reads R2 collection" />
+			</when>
+		</conditional>	
+		<param name="mapInfo" type="data" label="Mapping-operation information" />
+		<section name="HISAT" title="HISAT parameters" expanded="True">		
+			<param name="minIntron" type="integer" value="20" label="Minimum intron length"/>
+			<param name="maxIntron" type="integer" value="10000" label="Maximum intron length"/>
+		</section>	
+		<param name="thread" type="integer" value="3" label="Threads"/>
+    </inputs>
+    <stdio>
+	  <exit_code range="1:"  level="fatal" description="Error Running Extract Unmapped Reads" />
+    </stdio>
+    <outputs>
+		<data name="unmap_reads_R1" label="all_unmapped_reads.fastq">
+			<filter>readtype['single_or_paired'] == "single-end"</filter>
+		</data>
+		
+		<data name="unmap_reads_R1" label="all_unmapped_reads_R1.fastq">
+			<filter>readtype['single_or_paired'] == "paired-end"</filter>
+        </data>
+        <data name="unmap_reads_R2" label="all_unmapped_reads_R2.fastq">
+			<filter>readtype['single_or_paired'] == "paired-end"</filter>
+        </data> 
+ 
+    </outputs>
+      <help>
+.. class:: infomark
+
+**What it does**
+		  
+This function integrates several bioinformatics software including HISAT2, SAMTools, and BEDTools. High-quality reads are firstly input to this function to align against reference sequence(s), and then, SAMTools is used to extract unmapped alignmnet results with -f 4, BEDTools is used to convert them to FASTQ files. In addition, due to samples provided from some users are dual RNA-Seq, CAFU can also carry out alignmnet dual RNA-Seq against multiple reference genome sequences.
+
+.. class:: infomark
+
+**Inputs**
+ * High-quality RNA-Seq data (named as Trimmed_DATA_ID.fastq)
+ * Reference genome sequence(s).
+ * Mapping-operation information. It contains two columns, seperated by semicolon. The first column is RNA-Seq ID. The second column is target reference genome ID (multiple reference genome sequences are seperated by comma).
+ 
+	Example:
+	
+	If users collected two RNA-Seq (SRR00001.fq, SRR00002.fq), and two reference genomes (Ref1.fa, Ref2.fq). SRR00001 need to be aligned against Ref1, SRR00002 against Ref1 and Ref2.
+	
+	The mapping-operation information should be: 
+	
+	SRR00001;Ref1
+	
+	SRR00002,Ref1,Ref2
+
+.. class:: infomark
+
+**Outputs**
+ * Unmapped reads (named as "all_unmapped_reads.fastq" or "all_unmapped_reads_R1.fastq" and "all_unmapped_reads_R2.fastq")
+
+.. class:: infomark
+
+**Parameters**
+ * Minimum intron length (--min-intronlen): length of minimum intron (20 in default);
+ * Maximum intron length (--max-intronlen): length of maximum intron (10000 in default);
+ * threads (-p): number of alignment threads to launch (3 in default)
+
+.. class:: infomark
+
+**Citation**
+ * Kim D, Langmead B, Salzberg SL. HISAT: a fast spliced aligner with low memory requirements. Nat Methods 2015;12:357-360.
+ * Li H, Handsaker B, Wysoker A et al. The sequence alignment/map format and SAMtools. Bioinformatics 2009;25:2078-2079.
+ * Quinlan AR, Hall IM. BEDTools: a flexible suite of utilities for comparing genomic features. Bioinformatics 2010;26:841-842.
+    </help>
+
+</tool>

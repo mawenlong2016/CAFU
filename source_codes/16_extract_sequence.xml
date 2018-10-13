@@ -1,0 +1,22 @@
+<tool id="extractSeq" name="Extract Sequences">
+  <description></description>
+  <command>
+		/home/chenzhuod/galaxy/tools/CAFU/seqtk/seqtk subseq $assemblyFasta $novelID > $novelFasta ;
+		/home/chenzhuod/galaxy/tools/CAFU/cufflinks-2.2.1.Linux_x86_64/gffread -w $referenceTranscripts -g $genome $genomeAnnotation;
+		cat $novelFasta $referenceTranscripts > $allFasta;
+  </command>
+  <inputs>
+		<param name="assemblyFasta" type="data" format="fasta" label="All transcript sequences"/>
+		<param name="novelID" type="data" label="Transcripts ID" />
+		<param name="genome" type="data" format="fasta" label="Rference genome sequences"/>
+		<param name="genomeAnnotation" type="data" label="Reference genome annotation" />
+  </inputs>
+  <stdio>
+	<exit_code range="1:"  level="fatal" description="Error Running combine collection to a file" />
+  </stdio>
+  <outputs>
+	<data name="novelFasta" format="fasta" label="Extracted transcritps sequences according to transcript ID"/>
+	<data name="referenceTranscripts" format="fasta" label="Extracted transcritps sequences according to genome annotation"/>
+	<data name="allFasta" format="fasta" label="Super transcript sequences"/>
+  </outputs>
+</tool>

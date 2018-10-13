@@ -1,0 +1,74 @@
+<tool id="WGCNA and topGO" name="Co-expression and GO">
+  <description></description>
+  <requirement type="package">WGCNA</requirement>
+  <requirement type="package">raster</requirement>
+  <requirement type="package" version="1.2.0">getopt</requirement>
+  <command>
+
+	Rscript /home/chenzhuod/galaxy/tools/CAFU/15_co-expression_and_GO.R --input1 $input_1 --input2 $input_2 --input3 $input_3 --input4 $input_4	--input5 $input_5	
+		--output1 $output_1 --output2 $output_2 --output3 $output_3 --output4 $output_4 --output5 $output_5 ;
+  </command>
+  <inputs>
+      <param name="input_1" type="data" label="Transcritp expression value matrix"/>
+      <param name="input_2" type="text" value="1" min="0" label="Coefficient of variation" />
+      <param name="input_3" type="text" label="Minimum number of expressed samples" />
+      <param name="input_4" type="text" value="GCC" label="Correlation coefficent type" help="" />
+      <param name="input_5" type="integer" value="3" label="Treads" />
+  </inputs>
+  	<stdio>
+		<regex match="Execution halted"
+			   source="both"
+			   level="fatal"
+			   description="Execution halted." />
+		<regex match="Error in"
+			   source="both"
+			   level="fatal"
+			   description="An undefined error occured, please check your intput carefully and contact your administrator." />
+		<regex match="Fatal error"
+			   source="both"
+			   level="fatal"
+			   description="An undefined error occured, please check your intput carefully and contact your administrator." />
+	</stdio>
+  <outputs>
+	  <data name="output_1" format="pdf" label="dendrograms and module colors (plot)" />
+	  <data name="output_2" format="tabular" label="edge File" />
+	  <data name="output_3" format="tabular" label="node File" />
+	  <data name="output_4" format="tabular" label="hub transcript information" />
+	  <data name="output_5" format="tabular" label="topGO results"/>
+  </outputs>
+    	<help>
+.. class:: infomark
+
+**What it does**
+		  
+To annotate assembled transcritps, CAFU can operate co-expression network and GO enrichment analysis, using "WGCNA" and "topGO".
+
+.. class:: infomark
+
+**Inputs**
+ * Expression matrix of super-transcripts (including assembled and reference transcripts). Each row represents a transcript and each column represents a sample.
+
+ * Coefficient of variation.
+ 
+ * Minimum number of expressed samples.
+
+.. class:: infomark
+
+**Outputs**
+ * Plot of dendrograms and module colors.
+ 
+ * co-expression network information (including node and edge files).
+ 
+ * Hub transcript ID.
+ 
+ * TopGO results.
+
+.. class:: infomark
+
+**Citation**
+ * Langfelder P, Horvath S. WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics 2008;9:559-571.
+ 
+ * Alexa A, Rahnenfuhrer J. topGO: enrichment analysis for gene ontology. R package version 2010;2.
+
+    </help>
+</tool>
