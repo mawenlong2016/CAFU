@@ -3,3 +3,39 @@ CAFU is a Galaxy-based bioinformatics framework for comprehensive assembly and f
 
 ## Overview of functional modules in CAFU
 
+<table>
+    <tr>
+        <td>Functional modules</td> 
+        <td>Functions</td>
+        <td>Applications</td>
+        <td>Input files</td>
+        <td>Main output files</td>
+        <td>Programs</td>
+        <td>References</td>
+   </tr>
+   <tr>
+        <td rowspan="7">Extraction of unmapped reads</td>    
+   </tr>
+   <tr>
+       <td>Quality Control</td> 
+       <td>Examine the quality of RNA-Seq data</td> 
+       <td>Row RNA-seq data</td>
+       <td>Quality examination reports</td>
+       <td>FastQC (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+       <td>[1]</td>
+   </tr>
+    <tr>
+        <td rowspan="4">Trim Raw Reads</td>
+        <td rowspan="4">Trim poly-A/T and low-quality reads</td>
+        <td rowspan="4">Raw RNA-seq data</td>
+        <td rowspan="4">High-quality RNA-seq data (Fastq)</td>
+    </tr>
+    <tr>
+        <td>Fqtrim (version 0.9.7; https://ccb.jhu.edu/software/fqtrim/)</td>
+        <td>[2]</td>
+    </tr>
+    <tr>
+        <td>Trimmomatic (version 0.36; http://www.usadellab.org/cms/?page=trimmomatic)</td>
+        <td>[3]</td>
+    </tr>
+</table>
