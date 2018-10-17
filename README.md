@@ -8,7 +8,7 @@
 
 ## Overview of functional modules in CAFU
 - [**Extraction of unmapped reads**](https://github.com/cma2015/CAFU/blob/master/tutorial/Extraction_mapped_reads.md)
-- [**De novo transcript assembly of unmapped reads**](https://github.com/cma2015/CAFU/blob/master/tutorial/De_novo_transcript_assembly_of_unmapped_reads.md)
+- [***De novo* transcript assembly of unmapped reads**](https://github.com/cma2015/CAFU/blob/master/tutorial/De_novo_transcript_assembly_of_unmapped_reads.md)
 - [**Evidence support of assembled transcripts**](https://github.com/cma2015/CAFU/blob/master/tutorial/Evidence_support_of_assembled_transcripts.md)
 - [**Species assignment of assembled transcripts**](https://github.com/cma2015/CAFU/blob/master/tutorial/SAT.md)
 - [**Sequence characterization of assembled transcripts**](https://github.com/cma2015/CAFU/blob/master/tutorial/Sequence%20characterization%20of%20assembled%20transcripts.md)
