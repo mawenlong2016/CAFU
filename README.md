@@ -18,13 +18,10 @@
 ## CAFU Docker image installation
 - Step 1: [Docker installation](https://github.com/cma2015/CAFU/blob/master/tutorial/Docker_installation.md)
 - Step 2: CAFU installation from Docker Hub
---------------------------------
-  For Mac OS X and Linux operating systems, open the terminal, for Windows operating system, open CMD. Typing the following command:
 ```bash
 # Pull CAFU from Docker Hub
 $ docker pull malab/cafu
 ```
-
 - Step 3: Qucikly start
 ```bash
 $ docker run -it --net=host malab/cafu bash
