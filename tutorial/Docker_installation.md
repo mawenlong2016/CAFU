@@ -24,4 +24,3 @@ $ sudo apt-get install -f
 $ docker run hello-world
 ```
    **<font color =red>Note</font>:** root permission is required for Linux operating system.
-   **<font color =red>Note</font>:** considering that differences between different computers may exist, please refer to [official installation manual](https://docs.docker.com/install) if instructions above don’t work.
