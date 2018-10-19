@@ -30,6 +30,9 @@ $ bash run.sh
 ```
 Then you can access CAFU instance via http://localhost:8080 
 
+## How to access help ##
+* If users encounter any bugs or issues, feel free to leave a message at Github [issues](<https://github.com/cma2015/CAFU/issues>). We will try our best to deal with all issues as soon as possible.
+* In addition, if any suggestions are available, feel free to contact: __Siyuan Chen__ <chenzhuod@gmail.com> or __Jingjing Zhai__ <zhaijingjing603@gmail.com> 
 
 ## References
 1. Andrews S. FastQC: a quality control tool for high throughput sequence data 2010.
