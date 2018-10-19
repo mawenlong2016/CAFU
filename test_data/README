@@ -1,1 +1,29 @@
-All test data are contained in the compressed file.
+CAFU_test_data contains five folders ("PE RNA-Seq", "SE RNA-Seq", "genomes", "SAT", "others")
+
+* PE RNA-Seq
+This dataset is provided for module i) unmapped read extraction and ii) de novo transcript assembly of unmapped reads.
+
+* SE RNA-Seq
+This dataset is provided for function "Analyze Differential expression" of module vi) expression profiles of assembled transcripts.
+
+* genomes
+This dataset is provided for two functions, one is "Extract Unmapped Reads", the other is "Genome-level Evidence" or "Transcripts-level Evidence".
+
+Of this, "maize.fa" and "maize.gff3" are also used for function "Extract Sequences".
+
+* SAT
+This dataset is provided for function "SAT".
+
+* others
+This folder include four files. 
+
+"assembled_transcript.fasta" is used for module iii) Evidence support of assembled transcripts.
+
+"assembled_transcript_expression" and "RNA-Seq_sample_information" are used for function "Analyze Condition Specificity".
+
+"assembled_transcript_expression" can also be used for function "Analysis Heterogeneous".
+
+"differentially_expressed_transcript_expression" is used for vii) function annotation of assembled transcripts.
+
+ 
+
