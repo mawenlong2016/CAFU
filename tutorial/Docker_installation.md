@@ -11,7 +11,7 @@
 * Drag the docker into Applications and complete installation;
 * Start docker from Launchpad by click it.
 #### For Ubuntu (Test on Ubuntu 14.04 LTS and Ubuntu 16.04 LTS):
-* Go to [Docker](<https://download.docker.com/linux/ubuntu/dists/>), choose your Ubuntuversion, browse to ___pool/stable___ and choose ___amd64, armhf, ppc64el or s390x.____ Download the ___DEB___ file for the Docker version you want to install;
+* Go to [Docker](<https://download.docker.com/linux/ubuntu/dists/>), choose your Ubuntu version, browse to ___pool/stable___ and choose ___amd64, armhf, ppc64el or s390x.____ Download the ___DEB___ file for the Docker version you want to install;
 * Install Docker, supposing that the DEB file is download into following path:___"/home/docker-ce<version-XXX>~ubuntu_amd64.deb"___ </br>
 ```bash
 $ sudo dpkg -i /home/docker-ce<version-XXX>~ubuntu_amd64.deb      
