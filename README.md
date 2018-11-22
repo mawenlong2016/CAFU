@@ -24,11 +24,11 @@ $ docker pull malab/cafu
 ```
 - Step 3: Qucikly start
 ```bash
-$ docker run -it --net=host malab/cafu bash
+$ docker run -it -p 80:80 malab/cafu bash
 $ cd /home/galaxy
 $ bash run.sh
 ```
-Then you can access CAFU instance via http://localhost:8080 
+Then you can access CAFU instance via http://localhost:80 
 
 ## How to access help ##
 * If users encounter any bugs or issues, feel free to leave a message at Github [issues](<https://github.com/cma2015/CAFU/issues>). We will try our best to deal with all issues as soon as possible.
