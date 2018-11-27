@@ -38,7 +38,7 @@ Then you can access CAFU instance via http://localhost:80
 
 
 #### Upload regular file
-- Click **Get Data** to upload files (see figure blow).
+- Click **Get Data** to upload files (see figure below).
 
 ![Upload files](https://github.com/cma2015/CAFU/blob/master/CAFU_images/2.png)
 
