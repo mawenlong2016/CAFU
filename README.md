@@ -30,6 +30,42 @@ $ bash run.sh
 ```
 Then you can access CAFU instance via http://localhost:80 
 
+## How to use CAFU
+### Upload data
+#### Download CAFU testing datasets
+- Download test data from [CAFU GitHub project](https://github.com/cma2015/CAFU). Click **Clone or download**, and download the ZIP compressed files into you local device.
+  ![Download data](https://github.com/cma2015/CAFU/blob/master/CAFU_images/1.png)
+
+
+#### Upload regular file
+- Click **Get Data** to upload files (see figure blow).
+
+![Upload files](https://github.com/cma2015/CAFU/blob/master/CAFU_images/2.png)
+
+And then you will see the following interface:
+
+![](https://github.com/cma2015/CAFU/blob/master/CAFU_images/3.png)
+
+Go on by clicking **Choose local file** and select a file you would like to upload (e.g. upload the file in the directory ```./CAFU/test_data/SE RNA-Seq/mapInfoSE```), you will get this interface:
+![Upload regular file](https://github.com/cma2015/CAFU/blob/master/CAFU_images/4.png)
+Then click **Start** to start to upload files.
+
+
+#### Upload collection file
+- Click **Get Data** to upload files (see figure blow).
+
+![Upload files](https://github.com/cma2015/CAFU/blob/master/CAFU_images/2.png)
+And then you will see the following interface:
+![Upload files](https://github.com/cma2015/CAFU/blob/master/CAFU_images/5.png)
+Seleting a list files to upload as a collection:
+![Upload files](https://github.com/cma2015/CAFU/blob/master/CAFU_images/6.png)
+
+Click **Start** to upload, after finishing uploading, click **Build** (see figure below):
+![Upload files](https://github.com/cma2015/CAFU/blob/master/CAFU_images/7.png)
+Then enter a name for you collection and click **Create list**
+![Upload files](https://github.com/cma2015/CAFU/blob/master/CAFU_images/8.png)
+
+
 ## How to access help ##
 * If users encounter any bugs or issues, feel free to leave a message at Github [issues](<https://github.com/cma2015/CAFU/issues>). We will try our best to deal with all issues as soon as possible.
 * In addition, if any suggestions are available, feel free to contact: __Siyuan Chen__ <chenzhuod@gmail.com> or __Jingjing Zhai__ <zhaijingjing603@gmail.com> 
