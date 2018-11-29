@@ -21,8 +21,10 @@
 We provided [CAFU web server](http://bioinfo.nwafu.edu.cn:4001) and [CAFU Docker image](https://hub.docker.com/r/malab/cafu/) to enable large-scale unmapped reads analysis. More details about how to use CAFU are available at [here](https://github.com/cma2015/CAFU/blob/master/tutorial/User_manual.md).
 
 
-## How to access help ##
+## How to access help
 * If users encounter any bugs or issues, feel free to leave a message at Github [issues](<https://github.com/cma2015/CAFU/issues>). We will try our best to deal with all issues as soon as possible.
 * In addition, if any suggestions are available, feel free to contact: __Siyuan Chen__ <chenzhuod@gmail.com> or __Jingjing Zhai__ <zhaijingjing603@gmail.com> 
 
+## How to cite this work
+Siyuan Chen#, Chengzhi Ren#, Jingjing Zhai#, Jiantao Yu#, Xuyang Zhao, Zelong Li, Ting Zhang, Wenlong Ma, Zhaoxue Han, Chuang Ma, CAFU: A Galaxy framework for exploring unmapped RNA-Seq data (submitted to Briefings in Bioinformatics).
 
