@@ -25,21 +25,4 @@ We provided [CAFU web server](http://bioinfo.nwafu.edu.cn:4001) and [CAFU Docker
 * If users encounter any bugs or issues, feel free to leave a message at Github [issues](<https://github.com/cma2015/CAFU/issues>). We will try our best to deal with all issues as soon as possible.
 * In addition, if any suggestions are available, feel free to contact: __Siyuan Chen__ <chenzhuod@gmail.com> or __Jingjing Zhai__ <zhaijingjing603@gmail.com> 
 
-## References
-1. Andrews S. FastQC: a quality control tool for high throughput sequence data 2010.
-2. Pertea G. Fqtrim: v0. 9.4 release. Zenodo, 2015.
-3. Bolger AM, Lohse M, Usadel B. Trimmomatic: a flexible trimmer for Illumina sequence data. Bioinformatics 2014;30:2114-2120.
-4. Kim D, Langmead B, Salzberg SL. HISAT: a fast spliced aligner with low memory requirements. Nat Methods 2015;12:357-360.
-5. Li H, Handsaker B, Wysoker A et al. The sequence alignment/map format and SAMtools. Bioinformatics 2009;25:2078-2079.
-6. Quinlan AR, Hall IM. BEDTools: a flexible suite of utilities for comparing genomic features. Bioinformatics 2010;26:841-842.
-7. Grabherr MG, Haas BJ, Yassour M et al. Full-length transcriptome assembly from RNA-Seq data without a reference genome. Nat Biotechnol 2011;29:644-652.
-8. Li W, Godzik A. Cd-hit: a fast program for clustering and comparing large sets of protein or nucleotide sequences. Bioinformatics 2006;22:1658-1659.
-9. Huang X, Madan A. CAP3: A DNA sequence assembly program. Genome Res 1999;9:868-877.
-10. Li B, Dewey CN. RSEM: accurate transcript quantification from RNA-Seq data with or without a reference genome. BMC Bioinformatics 2011;12:323-338.
-11. Langmead B, Salzberg SL. Fast gapped-read alignment with Bowtie 2. Nat Methods 2012;9:357-359.
-12. Wu TD, Watanabe CK. GMAP: a genomic mapping and alignment program for mRNA and EST sequences. Bioinformatics 2005;21:1859-1875.
-13. Kang YJ, Yang DC, Kong L et al. CPC2: a fast and accurate coding potential calculator based on sequence intrinsic features. Nucleic Acids Res 2017;45:W12-W16.
-14. Finn RD, Bateman A, Clements J et al. Pfam: the protein families database. Nucleic Acids Res 2014;42:D222-D230.
-15. Leng N, Dawson JA, Thomson JA et al. EBSeq: an empirical Bayes hierarchical model for inference in RNA-seq experiments. Bioinformatics 2013;29:1035-1043.
-16. Langfelder P, Horvath S. WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics 2008;9:559-571.
-17. Alexa A, Rahnenfuhrer J. topGO: enrichment analysis for gene ontology. R package version 2010;2.
+
