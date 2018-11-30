@@ -18,7 +18,8 @@
 
 ## How to use CAFU
 
-We provided [CAFU web server](http://bioinfo.nwafu.edu.cn:4001) and [CAFU Docker image](https://hub.docker.com/r/malab/cafu/) to enable large-scale unmapped reads analysis. More details about how to use CAFU are available at [here](https://github.com/cma2015/CAFU/blob/master/tutorial/User_manual.md).
+- More details about how to use CAFU are presented at https://github.com/cma2015/CAFU/blob/master/tutorial/User_manual.md
+- Test datasets can de downloaded from https://github.com/cma2015/CAFU/tree/master/test_data
 
 
 ## How to access help
