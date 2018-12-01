@@ -90,8 +90,9 @@ In this section, we provide an example for each module to show how to use to per
   
   ![Quality control](https://github.com/cma2015/CAFU/blob/master/CAFU_images/9.png)
 
-
-  This toolkit produces a basic text and a HTML output file that containing:
+  
+  Finally, click **Execute** to start performing quality control.
+  Once the analysis is finished, a basic text and a HTML output file will be returned. The HTML output contains:
 
   - Basic Statistics
   - Per base sequence quality
