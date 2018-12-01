@@ -41,7 +41,7 @@
   ![](https://github.com/cma2015/CAFU/blob/master/CAFU_images/3.png)
 
 
-  Next, Click the button **Choose local file** and select a file you would like to upload (e.g. upload the file ```mapInfoSE``` in the directory ```/your directory/CAFU/test_data/SE RNA-Seq/```), you will see the following interface:
+  Next, Click the button **Choose local file** and select a file you would like to upload (e.g. upload the file ```mapping_info``` in the directory ```/your directory/CAFU/test_data/SE RNA-Seq/```), you will see the following interface:
 
   
   ![Upload regular file](https://github.com/cma2015/CAFU/blob/master/CAFU_images/4.png)
@@ -49,8 +49,8 @@
   
   Then click **Start** to upload file.
 
-#### Upload collection file
-- Similar to **Upload regular file**, click **Get Data** first (see figure blow):
+#### Upload a collection
+- Similar to **Upload regular file**, click **Get Data** first (see figure below):
 
 
   ![Upload files](https://github.com/cma2015/CAFU/blob/master/CAFU_images/2.png)
@@ -61,7 +61,7 @@
   ![Upload files](https://github.com/cma2015/CAFU/blob/master/CAFU_images/5.png)
 
   
-  Selecting a list files to upload as a collection (e.g. upload all files with ZIP suffix in the folder ```/your directory/CAFU/test_data/SE RNA-Seq/```):
+  Afterwards, select a list files to upload as a collection (e.g. upload all files with ZIP suffix in the folder ```/your directory/CAFU/test_data/SE RNA-Seq/```):
 
   
   ![Upload files](https://github.com/cma2015/CAFU/blob/master/CAFU_images/6.png)
