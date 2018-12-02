@@ -34,7 +34,7 @@ This folder includes seven files (Assembled_transcript.fasta, Assembled_transcri
   This function needs these test data:
   
 	  1) Unmapped reads generated from the function "Extract Unmapped Reads";
-	  2) Contamination sequence: "Cont_seq.fasta" from the folder "Others";
+	  2) Contamination sequence: "Cont_seq.fasta" from the folder "others";
 
 - (5) Assemble Unmapped Reads
 
