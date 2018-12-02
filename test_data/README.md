@@ -19,11 +19,11 @@ This folder includes seven files (Assembled_transcript.fasta, Assembled_transcri
 ### For each function:
 - (1) Quality Control
 
-  This function needs a file or a collection of RNA-Seq. User can use RNA-Seq data in the folder "RNA-Seq".
+  This function needs a file or a collection of RNA-Seq. User can use RNA-Seq data in the folder "SE RNA-Seq".
 
 - (2) Trim Raw Reads
 
-  The test data for this function include a collection of RNA-Seq from the folder "RNA-Seq". (upload as a collection, SEE USER MANNUAL)
+  The test data for this function include a collection of RNA-Seq from the folder "SE RNA-Seq". (upload as a collection, SEE USER MANNUAL)
 
 - (3) Extract Unmapped Reads
 
