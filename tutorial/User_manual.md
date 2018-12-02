@@ -391,7 +391,19 @@ In this section, we provide an example for each module to show how to use to per
 
     ```Reference transcript SC-PseAAC```: General series correlation pseudo amino acid composition encoding of transcripts from the existing genome annotation.
 
+- **Detect Alternative Splicing Events**
 
+  This function is used to detect alternative splicing events in assembled transcripts using an R pacaage SGSeq (Goldstein *et al*., 2016).
+
+  The only input of this module is GFF/GTF annotation file, here we use the test data located in ```/your directory/CAFU/test_data/other/AS_test.gtf``` to run this module.
+
+  ![nucleic-acid feature](https://github.com/cma2015/CAFU/blob/master/CAFU_images/28.png)
+
+  Then two outputs will be returned:
+
+  **Output 1**: ```Alternative splicing results```, Alternative splicing events of all transcripts.
+
+  **Output 2**: ```Read counts of all genome features in GTF file```, Read counts supported for all genome features in GTF file provided by users. 
 
 ### EXPRESSION PROFILES OF ASSEMBLED TRANSCRIPTS
 - **Analyze Condition Specificity**
