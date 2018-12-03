@@ -19,7 +19,7 @@
 
 
 ### Upload data
-**NOTE**: For docker users, ZIP files in test data should be uncompressed before uploading.
+**NOTE**: For docker users, ZIP files in test_data should be uncompressed before uploading.
 
 #### Download CAFU test data
 - Download test data from [CAFU GitHub project](https://github.com/cma2015/CAFU). Click **Clone or download** (see figure below), and download the ZIP compressed files into your local device and then uncompress it. 
