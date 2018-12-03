@@ -262,9 +262,9 @@ In this module, we provide an example for each module to show how to use to perf
 
 - **Protein-level Evidence**
 
-  In this module, coding potential evidence of transcripts is fistly evaluated using CPC2 (Kang *et al*., 2017). Then for coding transcripts, Pfam (Finn *et al*., 2014) will be used to identify the protein families. 
+  In this function, coding potential evidence of transcripts is fistly evaluated using CPC2 (Kang *et al*., 2017). Then for coding transcripts, Pfam (Finn *et al*., 2014) will be used to identify the protein families. 
   
-  Here, we use the file ```/your directory/CAFU/test_data/others/assembled_transcript.fasta``` to execute this module.
+  Here, we use the file ```/your directory/CAFU/test_data/others/assembled_transcript.fasta``` to execute this function.
 
   Then three outputs will be returned:
 
