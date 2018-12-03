@@ -471,7 +471,7 @@ In this section, we provide an example for each module to show how to use to per
 ### OTHER TOOLS
 
 
-- Remove Batch Effect
+- **Remove Batch Effect**
 
   This function can be used to remove batch effect using an R package sva (Leek *et al*., 2012).
 
@@ -496,7 +496,7 @@ In this section, we provide an example for each module to show how to use to per
   Then the corrected expression matrix named as ```Corrected transcript abundance matrix``` will be returned.
 
 
-- Extract Sequences
+- **Extract Sequences**
 
   This function is provided for extracting transcript sequences. It includes three ways, one is extracting sub-sequences (novel transcripts) from a fasta file (assembled transcript sequences) according to target sequence ID (novel transcript ID); one is used for extracting transcript sequences from reference genome according to genome annotation file; the rest one is combine the former two ways to establish an all transcripts file.
 
@@ -504,7 +504,7 @@ In this section, we provide an example for each module to show how to use to per
   
   **Input 1 **: ```All assembled transcript sequences``` (This file can be generated from the function **Assemble Unmapped Reads**).
   
-  **Input 2 **: ```Novel transcript ID```: ID of novel transcripts. (This file can be generated from the module **iii) Evidence support of assembled transcripts**).
+  **Input 2 **: ```Novel transcript ID```: IDs of novel transcripts. (This file can be generated from the module **iii) Evidence support of assembled transcripts**).
   
   Then the target transcript sequence file named as ```Sequences of novel transcripts``` will be returned.
   
