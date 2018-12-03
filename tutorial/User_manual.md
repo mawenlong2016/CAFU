@@ -498,25 +498,28 @@ In this section, we provide an example for each module to show how to use to per
 
 - **Extract Sequences**
 
-  This function is provided for extracting transcript sequences. It includes three ways, one is extracting sub-sequences (novel transcripts) from a fasta file (assembled transcript sequences) according to target sequence ID (novel transcript ID); one is used for extracting transcript sequences from reference genome according to genome annotation file; the rest one is combine the former two ways to establish an all transcripts file.
+  This function is provided for extracting transcripts sequences which includes three sub-functions:
+  - **Extract sub-sequences according to sequence ID from a fasta file**: This function can be used for extracting sub-sequences (e.g. novel transcripts) from a fasta file (e.g. assembled transcripts sequences) according to specified sequence ID (e.g. novel transcript ID);
+  - **Extract transcripts according to GTF/GFF from reference genome sequences**: This function is used for extracting transcripts sequences from reference genome according to genome annotation file (GTF/GFF);
+  - **Build all transcripts file**: This function is used for combining reference and assembled transcripts.
 
   For **Extract sub-sequences according to sequence ID from a fasta file**, there are two required inputs including:
   
-  **Input 1 **: ```All assembled transcript sequences``` (This file can be generated from the function **Assemble Unmapped Reads**).
+  **Input 1**: ```All assembled transcripts sequences```: This file can be generated from the function **Assemble Unmapped Reads**.
   
-  **Input 2 **: ```Novel transcript ID```: IDs of novel transcripts. (This file can be generated from the module **iii) Evidence support of assembled transcripts**).
+  **Input 2**: ```Novel transcript ID```: IDs of novel transcripts. (This file can be generated from the module **iii) Evidence support of assembled transcripts**).
   
   Then the target transcript sequence file named as ```Sequences of novel transcripts``` will be returned.
   
   For **Extract transcripts according to GTF/GFF from reference genome sequence**, there are also two required inputs including:
   
-  **Input 1 **: ```Reference genome sequence``` Sequences of reference genome including all chromosome..
+  **Input 1**: ```Reference genome sequence```: Sequences of reference genome including all chromosome..
   
-  **Input 2 **: ```Reference genome annotation``` Corresponding reference genome annotation file with reference genome.
+  **Input 2**: ```Reference genome annotation```: Corresponding reference genome annotation file with reference genome.
   
   Then the target transcript sequence file named as ```Sequences of reference transcripts``` will be returned.
   
-  For **Establsh all transcript file (including novel and reference transcripts)**, the input files is the same as the former two ways.
+  For **Build all transcript file (including novel and reference transcripts)**, the input files is the same as the former two ways.
   
   Then the target transcript sequence file named as ```Sequences of all transcripts``` will be returned.
   
