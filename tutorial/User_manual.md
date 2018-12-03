@@ -193,7 +193,7 @@ In this section, we provide an example for each module to show how to use to per
 
   This module allows users to eliminate assembled transcripts with low read coverage and/or low expression abundance, which are likely assembly artifacts. RNA-Seq reads used for Assemble Unmapped Reads are mapped with newly assembled transcripts and reference transcripts by using bowtie2 (Langmead et al., 2012). CAFU outputs the read coverage of assembled transcripts at single-base resolution using BEDTools (Quinlan et al., 2010), and estimates the expression abundance of all transcripts in terms of FPKM (Fragments Per Kilobase Million) using RSEM (Li et al., 2011). Assembled transcripts with low read coverage (e.g., less than 10) and/or low expression (e.g., FPKM less than 1) in the majority of samples (e.g., 80%) are discarded.
 
-  RNA-Seq for calculating expression abundance and read coverage of transcripts are used the data used in *de novo* assembly. Thus, users only require input in this module is the newly assembled transcripts with FASTA format from unmapped reads (generated from the function **Assemble Unmapped Reads**). 
+  RNA-Seq for calculating expression abundance and read coverage of transcripts are used the data used in *de novo* assembly. Thus, users only require to input the newly assembled transcripts with FASTA format from unmapped reads (generated from the function **Assemble Unmapped Reads**). 
 
   ![expression-level](https://github.com/cma2015/CAFU/blob/master/CAFU_images/18.png)
   
