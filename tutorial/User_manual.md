@@ -215,11 +215,11 @@ In this section, we provide an example for each module to show how to use to per
   
   To run this module, at least three inputs are required including:
 
-  **Input 1**: Reference genome sequences of the species of interest (input as a data collection).
+  **Input 1**: Reference genome sequences of the species of interest (input as a data collection). Upload files (```maize.fa.zip, Oryza.fa.zip, Sorghum.fa.zip```) in directory ```/your directory/CAFU/test_data/genomes/``` as a collection named as ```Ref_Genome``` (user-defined name).
 
-  **Input 2**: Assembled transcript sequences generated from module **Assemble Unmapped Reads**.
+  **Input 2**: Assembled transcript sequences generated from module **Assemble Unmapped Reads**. Test data (```assembled_transcript.fasta```) is in directory ```/your directory/CAFU/test_data/others/```.
 
-  **Input 3**: Genome annotation (GFF/GTF format) of corresponding species with RNA-Seq samples.
+  **Input 3**: Genome annotation (GFF/GTF format) of corresponding species with RNA-Seq samples. Upload files (```maize.gff3.zip```) in directory ```/your directory/CAFU/test_data/genomes/```.
 
   **Input 4**: A character indicating the reference genome name (e.g. maize).
 
@@ -243,9 +243,9 @@ In this section, we provide an example for each module to show how to use to per
   
   To run this module, at least two inputs are required including:
 
-  **Input 1**: Reference sequence of well-annotated transcripts, such as full-length transcripts generated from single-molecule real-time sequencing and/or high-quality transcripts annotated in closely related species.
+  **Input 1**: Reference sequence of well-annotated transcripts, such as full-length transcripts generated from single-molecule real-time sequencing and/or high-quality transcripts annotated in closely related species. Upload files (```ref_trans.fasta.zip, ref_trans_1.fasta.zip```) in directory ```/your directory/CAFU/test_data/Transcripts/``` as a collection named as ```Ref_Transcripts``` (user-defined name).
 
-  **Input 2**: Assembled transcript sequences generated from module **Assemble Unmapped Reads**.
+  **Input 2**: Assembled transcript sequences generated from module **Assemble Unmapped Reads**. Test data (```assembled_transcript.fasta```) is in directory ```/your directory/CAFU/test_data/others/```.
 
 
    ![genome-level](https://github.com/cma2015/CAFU/blob/master/CAFU_images/22.png) 
@@ -307,9 +307,8 @@ In this section, we provide an example for each module to show how to use to per
 
   In this module, two features can be analyzed using this module (see figure below). To run this module, two inputs are required including:
 
-  **Input 1**: The sequences of assembled transcripts (or confident/novel transcripts) derived from unmapped reads. 
-
-  **Input 2**: The sequences of transcripts from the existing genome annotation. 
+  **Input 1**: The sequences of assembled transcripts (or confident/novel transcripts) derived from unmapped reads. Test data (```assembled_transcript.fasta```) is in directory ```/your directory/CAFU/test_data/others/```.
+  **Input 2**: The sequences of transcripts from the existing genome annotation. Test data (```ref_trans.fasta.zip```) is in directory ```/your directory/CAFU/test_data/others/```.
 
 
   ![nucleic-acid feature](https://github.com/cma2015/CAFU/blob/master/CAFU_images/21.png)
