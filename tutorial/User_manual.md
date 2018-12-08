@@ -167,7 +167,7 @@ In this module, we provide an example for each module to show how to use to perf
 
 - **Remove Contamination**
 
-  Considering that sequences obtained from impure nucleic acid preparations may contain DNA from sources other than the sample. Those sequence contaminations are a serious concern to the quality of the data used for downstream analysis. So in this module, potential contamination sequences are removed using Deconseq (Schmieder *et al*., 2011) with user-defined coverage and identity (e.g., 0.95) by aligning input reads to a contamination database. In the current version of CAFU, 3,529 bacterial and 81 viral reference genomes (downloaded from NCBI on 2018/11/05) are provided as default, however, user-defined contamination database is also supported. 
+  Considering that sequences obtained from impure nucleic acid preparations may contain DNA from sources other than the sample. Those sequence contaminations are a serious concern to the quality of the data used for downstream analysis. So in this module, potential contamination sequences are removed using Deconseq (Schmieder *et al*., 2011) with user-defined coverage and identity (e.g., 0.95) by aligning input reads to a contamination database. In the current version, CAFU only supports user-submitted contaminated reference sequences.
 
   ![remove contamination](https://github.com/cma2015/CAFU/blob/master/CAFU_images/17.png)
 
