@@ -308,8 +308,7 @@ In this module, we provide an example for each module to show how to use to perf
   In this module, two features can be analyzed using this module (see figure below). To run this module, two inputs are required including:
 
   **Input 1**: The sequences of assembled transcripts (or confident/novel transcripts) derived from unmapped reads. Test data (```assembled_transcript.fasta```) is in directory ```/your directory/CAFU/test_data/others/```.
-  **Input 2**: The sequences of transcripts from the existing genome annotation. Test data (```ref_trans.fasta.zip```) is in directory ```/your directory/CAFU/test_data/others/```.
-
+  **Input 2**: The sequences of transcripts from the existing genome annotation. Test data (```ref_trans.fasta.zip```) is in directory ```/your directory/CAFU/test_data/Transcripts/```.
 
   ![nucleic-acid feature](https://github.com/cma2015/CAFU/blob/master/CAFU_images/21.png)
 
