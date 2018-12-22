@@ -422,7 +422,7 @@ In this module, we provide an example for each module to show how to use to perf
 
   This function examines the stability of each transcript using its expression values in all samples and Gini index (coefficient) according to (O'Hagan *et al*., 2017).
 
-  To run this module, the only required input is the ```Transcript expression abundance matrix```, which is a tab seperated expression abundance matrix with the rows as transcripts and the columns as samples. Here, we still use the sample data ```assembled_transcript_expression, RNA-Seq_sample_information``` in the folder ```/your directory/CAFU/test_data/others/``` to show its usage (see figure below).
+  To run this module, the only required input is the ```Transcript expression abundance matrix```, which is a tab seperated expression abundance matrix with the rows as transcripts and the columns as samples. Here, we still use the sample data ```assembled_transcript_expression``` in the folder ```/your directory/CAFU/test_data/others/``` to show its usage (see figure below).
 
   ![nucleic-acid feature](https://github.com/cma2015/CAFU/blob/master/CAFU_images/25.png)
 
