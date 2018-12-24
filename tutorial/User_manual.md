@@ -158,7 +158,7 @@ In this module, we provide an example for each module to show how to use to perf
   ![Extrat unmapped reads](https://github.com/cma2015/CAFU/blob/master/CAFU_images/12.png)
 
 
-  Then click **Execute** to start extracting unmapped reads using CAFU. After finishing this process, the final unmapped reads named as ```all_unmapped_reads.fastq``` (see figure below) will be returned.
+  Then click **Execute** to start extracting unmapped reads using CAFU. After finishing this process, the final unmapped reads named as ```all_unmapped_reads.fastq``` and the number of unmapped reads per sample named as ```Status_of_number_of_unmapped_reads``` (see figure below) will be returned.
 
 
   ![unmapped reads output](https://github.com/cma2015/CAFU/blob/master/CAFU_images/13.png)
