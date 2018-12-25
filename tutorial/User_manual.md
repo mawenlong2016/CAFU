@@ -337,9 +337,9 @@ In this module, we provide an example for each module to show how to use to perf
 
 - **Characterize Amino-acid Feature**
 
-  This module allows users to explore the amino-acid features similarity used in SAT between assembled and reference transcripts.
+  This function allows users to explore the amino-acid features similarity used in SAT between assembled and reference transcripts.
 
-  Here, we take an example (see figure below) to show how to use this module to compare k-mer frequency of assembled and reference transcripts.
+  Here, we take an example (see figure below) to show how to use this function to compare k-mer frequency of assembled and reference transcripts.
 
   ![nucleic-acid feature](https://github.com/cma2015/CAFU/blob/master/CAFU_images/23.png)
   
@@ -394,9 +394,9 @@ In this module, we provide an example for each module to show how to use to perf
 
 - **Detect Alternative Splicing Events**
 
-  This function is used to detect alternative splicing events in assembled transcripts using an R pacaage SGSeq (Goldstein *et al*., 2016).
+  This function is used to detect alternative splicing events in assembled transcripts using an R package SGSeq (Goldstein *et al*., 2016).
 
-  The only input of this module is GFF/GTF annotation file, here we use the test data located in ```/your directory/CAFU/test_data/other/AS_test.gtf``` to run this module.
+  The only input of this function is GFF/GTF annotation file, here we use the test data located in ```/your directory/CAFU/test_data/others/AS_test.gtf.zip``` to run this function.
 
   ![nucleic-acid feature](https://github.com/cma2015/CAFU/blob/master/CAFU_images/28.png)
 
