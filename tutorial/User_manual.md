@@ -291,7 +291,7 @@ In this module, we provide an example for each module to show how to use to perf
 
   ![assembled transcripts](https://github.com/cma2015/CAFU/blob/master/CAFU_images/16.png)
 
-  Then click **Execute** to run this module, then four outputs will be returned:
+  Then click **Execute** to run this function, then four outputs will be returned:
 
   **Output 1**: ```Probabilistic score of each transcript```, A probabilistic score of each transcript, the higher, the more probable being positive.
 
