@@ -63,6 +63,8 @@
 
   
   Afterwards, select a list files to upload as a collection (e.g. upload all files with ZIP suffix in the folder ```/your directory/CAFU/test_data/SE RNA-Seq/```):
+  
+  **NOTE** A collcetion also permits one file.
 
   
   ![Upload files](https://github.com/cma2015/CAFU/blob/master/CAFU_images/6.png)
