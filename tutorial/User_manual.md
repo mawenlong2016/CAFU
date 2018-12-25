@@ -213,13 +213,13 @@ In this module, we provide an example for each module to show how to use to perf
 
 - **Genome-level Evidence**
   
-  This function can be used to identify de novo-assembled transcripts missing from the existing genome annotation. All the assembled transcripts are aligned to the reference genome sequences of the species of interests using GMAP (Wu *et al*., 2005), and selects the best genomic matches with high identity (e.g., ≥ 95%) and coverage (e.g., ≥ 95%). Users can also eliminate assembled transcripts with no introns, which could represent either noise or pseudogenes.
+  This function can be used to identify *de novo*-assembled transcripts missing from the existing genome annotation. All the assembled transcripts are aligned to the reference genome sequences of the species of interests using GMAP (Wu *et al*., 2005), and the best genomic matches with high identity (e.g., ≥ 95%) and coverage (e.g., ≥ 95%) are selected. Users can also eliminate assembled transcripts with no introns, which could represent either noise or pseudogenes.
   
-  To run this module, at least three inputs are required including:
+  To run this function, at least three inputs are required including:
 
   **Input 1**: Reference genome sequences of the species of interest (input as a data collection). Upload files (```maize.fa.zip, Oryza.fa.zip, Sorghum.fa.zip```) in directory ```/your directory/CAFU/test_data/genomes/``` as a collection named as ```Ref_Genome``` (user-defined name).
 
-  **Input 2**: Assembled transcript sequences generated from module **Assemble Unmapped Reads**. Test data (```assembled_transcript.fasta```) is in directory ```/your directory/CAFU/test_data/others/```.
+  **Input 2**: Assembled transcript sequences generated from function **Assemble Unmapped Reads**. Test data (```assembled_transcript.fasta```) is in directory ```/your directory/CAFU/test_data/others/```.
 
   **Input 3**: Genome annotation (GFF/GTF format) of corresponding species with RNA-Seq samples. Upload files (```maize.gff3.zip```) in directory ```/your directory/CAFU/test_data/genomes/```.
 
