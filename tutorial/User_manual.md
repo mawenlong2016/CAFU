@@ -439,7 +439,7 @@ In this module, we provide an example for each module to show how to use to perf
 
   This function integrates RSEM (Li *et al*., 2011) and EBSeq (Leng *et al*., 2013) to identify differential expression transcripts.
   
-  Here, we use the test data ```assembled_transcript.fasta``` in the folder ```/your directory/CAFU/test_data/others/```, and the same collection (```SE-RNA-Seq```) with **Quality control** to show its usage (see figure below). Sample information ```DE_info``` is in the folder ```/your directory/CAFU/test_data/SE RNA-Seq/```
+  Here, we use the test data ```assembled_transcript.fasta``` in the folder ```/your directory/CAFU/test_data/others/```, and the same collection (```SE-RNA-Seq```) with **Quality control** to show its usage (see figure below). Sample information ```DE_info``` is in the folder ```/your directory/CAFU/test_data/SE RNA-Seq/```.
 
   Then four outputs will be returned:
 
@@ -480,9 +480,9 @@ In this module, we provide an example for each module to show how to use to perf
 
   This function can be used to remove batch effect using an R package sva (Leek *et al*., 2012).
 
-  To run this module, there are two required inputs (see figure below) including:
+  To run this function, there are two required inputs (see figure below) including:
 
-  **Input 1**: ```Transcript expression abundance matrix```, Expression abundance matrix with the rows as transcripts and the columns as samples.
+  **Input 1**: ```Transcript expression abundance matrix``` in the folder ``````, Expression abundance matrix with the rows as transcripts and the columns as samples.
 
   **Input 2**: RNA-Seq sample batch effect information.
   
