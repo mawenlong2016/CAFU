@@ -247,7 +247,7 @@ In this module, we provide an example for each module to show how to use to perf
 
   **Input 1**: Reference sequence of well-annotated transcripts, such as full-length transcripts generated from single-molecule real-time sequencing and/or high-quality transcripts annotated in closely related species. Upload files (```ref_trans.fasta.zip, ref_trans_1.fasta.zip```) in directory ```/your directory/CAFU/test_data/Transcripts/``` as a collection named as ```Ref_Transcripts``` (user-defined name).
 
-  **Input 2**: Assembled transcript sequences generated from module **Assemble Unmapped Reads**. Test data (```assembled_transcript.fasta```) is in directory ```/your directory/CAFU/test_data/others/```.
+  **Input 2**: Assembled transcript sequences generated from the function **Assemble Unmapped Reads**. Test data (```assembled_transcript.fasta```) is in directory ```/your directory/CAFU/test_data/others/```.
 
 
    ![genome-level](https://github.com/cma2015/CAFU/blob/master/CAFU_images/22.png) 
@@ -255,7 +255,7 @@ In this module, we provide an example for each module to show how to use to perf
    
    Then three outputs will be returned:
 
-   **Output 1**: ```Integrated GMAP results of newly assembled transcripts against all reference transcript sequences```, GMAP alignment results (coverage and identity) of each assembled transcript against all other transcript sequences.
+   **Output 1**: ```Integrated GMAP results of newly assembled transcripts against all reference transcript sequences```, GMAP alignment results (coverage and identity) of each assembled transcript against all other well-annotated transcripts.
 
    **Output 2**: ```Confident transcript information```, Confident transcript information filtered by high coverage and identity.
 
