@@ -457,7 +457,7 @@ In this module, we provide an example for each module to show how to use to perf
 
   In this function, co-expression network and GO enrichment analysis are used to annotate transcripts using "WGCNA" and "topGO", respectively.
 
-  In this tutorial, we used the file located in ```/your directory/CAFU/test_data/others/differentially_expressed_transcript_expression``` to perform co-expression network and GO enrichment analysis (see figure below).
+  In this tutorial, we used the file ```differentially_expressed_transcript_expression``` located in ```/your directory/CAFU/test_data/others/``` to perform co-expression network and GO enrichment analysis (see figure below).
 
   ![Co-expression and GO](https://github.com/cma2015/CAFU/blob/master/CAFU_images/20.png)
 
@@ -482,9 +482,9 @@ In this module, we provide an example for each module to show how to use to perf
 
   To run this function, there are two required inputs (see figure below) including:
 
-  **Input 1**: ```Transcript expression abundance matrix``` in the folder ``````, Expression abundance matrix with the rows as transcripts and the columns as samples.
+  **Input 1**: ```assembled_transcript_expression``` in the folder ```/your directory/CAFU/test_data/others/```, Expression abundance matrix with the rows as transcripts and the columns as samples.
 
-  **Input 2**: RNA-Seq sample batch effect information.
+  **Input 2**: RNA-Seq sample batch effect information ```batch information.txt``` is in the folder ```/your directory/CAFU/test_data/others/```.
   
   - **Expample:** Number 1, 2, 3 represent different experiments. The batch information should be:
     ```bash
@@ -518,7 +518,7 @@ In this module, we provide an example for each module to show how to use to perf
   
   For **Extract transcripts according to GTF/GFF from reference genome sequence**, there are also two required inputs including:
   
-  **Input 1**: ```Reference genome sequence```: Sequences of reference genome including all chromosome..
+  **Input 1**: ```Reference genome sequence```: Sequences of reference genome including all chromosome.
   
   **Input 2**: ```Reference genome annotation```: Corresponding reference genome annotation file with reference genome.
   
