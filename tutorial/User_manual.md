@@ -438,6 +438,8 @@ In this module, we provide an example for each module to show how to use to perf
 - **Analyze Differential Expression**
 
   This function integrates RSEM (Li *et al*., 2011) and EBSeq (Leng *et al*., 2013) to identify differential expression transcripts.
+  
+  Here, we use the test data ```assembled_transcript.fasta``` in the folder ```/your directory/CAFU/test_data/others/```, and the same collection (```SE-RNA-Seq```) with **Quality control** to show its usage (see figure below). Sample information ```DE_info``` is in the folder ```/your directory/CAFU/test_data/SE RNA-Seq/```
 
   Then four outputs will be returned:
 
@@ -453,9 +455,9 @@ In this module, we provide an example for each module to show how to use to perf
 
 - Co-expression and GO
 
-  In this module, co-expression network and GO enrichment analysis are used to annotate transcripts using "WGCNA" and "topGO", respectively.
+  In this function, co-expression network and GO enrichment analysis are used to annotate transcripts using "WGCNA" and "topGO", respectively.
 
-  In this tutorial, we used the file located in ```/your directory/CAFU/test_data/differentially_expressed_transcript_expression``` to perform co-expression network and GO enrichment analysis (see figure below).
+  In this tutorial, we used the file located in ```/your directory/CAFU/test_data/others/differentially_expressed_transcript_expression``` to perform co-expression network and GO enrichment analysis (see figure below).
 
   ![Co-expression and GO](https://github.com/cma2015/CAFU/blob/master/CAFU_images/20.png)
 
