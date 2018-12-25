@@ -206,9 +206,9 @@ In this module, we provide an example for each module to show how to use to perf
   
   **Output 1**: ```Read coverage of each transcript in each sample```, a matrix whose rows represent transcripts, and columns represent read coverage.
 
-  **Output 2**: ```Expression abundance of each transcripts in each sample```, a matrix whose rows represent transcripts, and columns represent expression abundance.
+  **Output 2**: ```Expression abundance of each transcript in each sample```, a matrix whose rows represent transcripts, and columns represent expression abundance.
 
-  **Output 3**: ```Confident transcript ID by Expression-level Evidence```, the common transcript ID from Confident transcript ID filtered by read coverage results and expression abundance.
+  **Output 3**: ```Confident transcript ID by Expression-level Evidence```, a confident transcript ID filtered by both read coverage results and expression abundance.
 
 
 - **Genome-level Evidence**
