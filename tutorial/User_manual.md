@@ -170,7 +170,9 @@ In this module, we provide an example for each module to show how to use to perf
 
   Considering that sequences obtained from impure nucleic acid preparations may contain DNA from sources other than the sample. Those sequence contaminations are a serious concern to the quality of the data used for downstream analysis. So in this function, potential contamination sequences are removed using Deconseq (Schmieder *et al*., 2011) with user-defined coverage and identity (e.g., 0.95) by aligning input reads to a contamination database. In the current version of CAFU, 3,529 bacterial and 81 viral reference genomes (downloaded from NCBI on 2018/11/05) are provided as default, however, user-defined contamination database is also supported. 
 
-  ![remove contamination](https://github.com/cma2015/CAFU/blob/master/CAFU_images/17.png)
+  Here we use the ```Default contamination and single-end unmapped reads``` as an example (see figure below):
+
+  ![remove contamination](https://github.com/cma2015/CAFU/blob/master/CAFU_images/Picture1.png)
 
 
   Then the clean reads with FASTQ format will be returned.
@@ -194,7 +196,7 @@ In this module, we provide an example for each module to show how to use to perf
 ### EVIDENCE SUPPORT OF ASSEMBLED TRANSCRIPTS
 - **Expression-level Evidence**
 
-  This function allows users to eliminate assembled transcripts with low read coverage and/or low expression abundance, which are likely assembly artifacts. RNA-Seq reads used for **Assemble Unmapped Reads** are mapped with newly assembled transcripts or/and reference transcripts by using bowtie2 (Langmead et al., 2012). CAFU outputs the read coverage of assembled transcripts at single-base resolution using BEDTools (Quinlan et al., 2010), and estimates the expression abundance of all transcripts in terms of FPKM (Fragments Per Kilobase Million) using RSEM (Li et al., 2011). Assembled transcripts with low read coverage (e.g., less than 10) and/or low expression (e.g., FPKM less than 1) in the majority of samples (e.g., 80%) are discarded.
+  This functione allows users to eliminate assembled transcripts with low read coverage and/or low expression abundance, which are likely assembly artifacts. RNA-Seq reads used for **Assemble Unmapped Reads** are mapped with newly assembled transcripts or/and reference transcripts by using bowtie2 (Langmead et al., 2012). CAFU outputs the read coverage of assembled transcripts at single-base resolution using BEDTools (Quinlan et al., 2010), and estimates the expression abundance of all transcripts in terms of FPKM (Fragments Per Kilobase Million) using RSEM (Li et al., 2011). Assembled transcripts with low read coverage (e.g., less than 10) and/or low expression (e.g., FPKM less than 1) in the majority of samples (e.g., 80%) are discarded.
 
   NOTE: RNA-Seq for calculating expression abundance and read coverage of transcripts are used the data used in *de novo* assembly. Thus, users only require to input the newly assembled transcripts from unmapped reads (generated from the function **Assemble Unmapped Reads**) or/and reference transcripts with FASTA format. 
 
@@ -233,7 +235,7 @@ In this module, we provide an example for each module to show how to use to perf
 
   **Output 1**: ```Integrated GMAP results of newly assembled transcripts against all reference genome sequences```: GMAP alignment results (coverage and identity) of each assembled transcript against all reference genome sequences.
 
-  **Output 2**: ```Confitent transcript information```: Confident transcript information filtered by high coverage and identity.
+  **Output 2**: ```Confident transcript information```: Confident transcript information filtered by high coverage and identity.
 
   **Output 3**: ```The same/similar-intron transcript ID```: Assembled transcript ID which possess the same/similar intron with corresponding species reference transcripts.
 
@@ -265,7 +267,9 @@ In this module, we provide an example for each module to show how to use to perf
 
   In this function, coding potential evidence of transcripts is fistly evaluated using CPC2 (Kang *et al*., 2017). Then for coding transcripts, Pfam (Finn *et al*., 2014) will be used to identify the protein families. 
   
-  Here, we use the file ```/your directory/CAFU/test_data/others/assembled_transcript.fasta``` to execute this function.
+  Here, we use the file ```/your directory/CAFU/test_data/others/assembled_transcript.fasta``` to execute this function (see figure below).
+
+  ![assembled transcripts](https://github.com/cma2015/CAFU/blob/master/CAFU_images/Picture3.png) 
 
   Then three outputs will be returned:
 
@@ -339,9 +343,9 @@ In this module, we provide an example for each module to show how to use to perf
 
   This function allows users to explore the amino-acid features similarity used in SAT between assembled and reference transcripts.
 
-  Here, we take an example (see figure below) to show how to use this function to compare k-mer frequency of assembled and reference transcripts.
+  Here, we take an example (see figure below) to show how to use this function to compare k-mer frequency of assembled and reference transcripts. **Input 1** and **Input 2** are located in the folder ```/your directory/CAFU/test_data/others/assembled_transcript.fasta``` and ```/your directory/CAFU/test_data/Transcripts/ref_trans.fasta.zip```
 
-  ![nucleic-acid feature](https://github.com/cma2015/CAFU/blob/master/CAFU_images/23.png)
+  ![nucleic-acid feature](https://github.com/cma2015/CAFU/blob/master/CAFU_images/Picture4.png)
   
   The outputs contain:
   
@@ -413,7 +417,7 @@ In this module, we provide an example for each module to show how to use to perf
 
   Here, we use the test data ```assembled_transcript_expression, RNA-Seq_sample_information``` in the folder ```/your directory/CAFU/test_data/others/``` to show its usage (see figure below).
 
-  ![nucleic-acid feature](https://github.com/cma2015/CAFU/blob/master/CAFU_images/24.png)
+  ![nucleic-acid feature](https://github.com/cma2015/CAFU/blob/master/CAFU_images/Picture5.png)
 
    Then two outputs will be returned:
 
@@ -427,7 +431,7 @@ In this module, we provide an example for each module to show how to use to perf
 
   To run this function, the only required input is the ```Transcript expression abundance matrix```, which is a tab seperated expression abundance matrix with the rows as transcripts and the columns as samples. Here, we still use the sample data ```assembled_transcript_expression``` in the folder ```/your directory/CAFU/test_data/others/``` to show its usage (see figure below).
 
-  ![nucleic-acid feature](https://github.com/cma2015/CAFU/blob/master/CAFU_images/25.png)
+  ![nucleic-acid feature](https://github.com/cma2015/CAFU/blob/master/CAFU_images/Picture2.png)
 
   The two outputs will be returned:
 
@@ -440,6 +444,8 @@ In this module, we provide an example for each module to show how to use to perf
   This function integrates RSEM (Li *et al*., 2011) and EBSeq (Leng *et al*., 2013) to identify differential expression transcripts.
   
   Here, we use the test data ```assembled_transcript.fasta``` in the folder ```/your directory/CAFU/test_data/others/```, and the same collection (```SE-RNA-Seq```) with **Quality control** to show its usage (see figure below). Sample information ```DE_info``` is in the folder ```/your directory/CAFU/test_data/SE RNA-Seq/```.
+
+ ![nucleic-acid feature](https://github.com/cma2015/CAFU/blob/master/CAFU_images/Picture6.png) 
 
   Then four outputs will be returned:
 
