@@ -292,11 +292,11 @@ In this module, we provide an example for each function to show how to perform u
   
   In this tutorial, we will show how to use SAT using all the FASTA format files in directory ```/your directory/CAFU/test_data/SAT/```. To run SAT, at least three files are required including:
 
-  **Input 1**: The positive coding sequences (CDS) with FASTA format.  
+  **Input 1**: The positive coding sequences (CDS) with FASTA format named as ```positive_cds.fa```.  
 
-  **Input 2**: The negative coding sequences (CDS) with FASTA format.
+  **Input 2**: The negative coding sequences (CDS) with FASTA format named as ``` negative_cds.fa ```.
 
-  **Input 3**: The coding sequences (CDS) with FASTA format assembled using unmapped reads from mixed-species (e.g., pathogen-host) 
+  **Input 3**: The coding sequences (CDS) with FASTA format assembled using unmapped reads from mixed-species (e.g., pathogen-host) named as ``` negative_cds.fa ```
 
   ![assembled transcripts](https://github.com/cma2015/CAFU/blob/master/CAFU_images/16.png)
 
