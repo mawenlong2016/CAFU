@@ -200,9 +200,9 @@ In this module, we provide an example for each function to show how to perform u
 
   This function allows users to eliminate assembled transcripts with low read coverage and/or low expression abundance, which are likely assembly artifacts. RNA-Seq reads used for **Assemble Unmapped Reads** are mapped with newly assembled transcripts or/and reference transcripts by using bowtie2 (Langmead et al., 2012). CAFU outputs the read coverage of assembled transcripts at single-base resolution using BEDTools (Quinlan et al., 2010), and estimates the expression abundance of all transcripts in terms of FPKM (Fragments Per Kilobase Million) using RSEM (Li et al., 2011). Assembled transcripts with low read coverage (e.g., less than 10) and/or low expression (e.g., FPKM less than 1) in the majority of samples (e.g., 80%) are discarded.
 
-  **NOTE:** (1) For testing CAFU, we suggest users running this function using **Unmapped_reads_de_novo_assembled_transcripts** generated from the last step **Assemble Unmapped Reads** to reduce test time. 
+  **NOTE:** (1) For testing CAFU, we suggest users running this function using **Unmapped_reads_de_novo_assembled_transcripts** generated from the last step **Assemble Unmapped Reads** to reduce test time;
             
-     (2)RNA-Seq for calculating expression abundance and read coverage of transcripts are used the data used in *de novo* assembly. Thus, users only require to input the newly assembled transcripts from unmapped reads (generated from the function **Assemble Unmapped Reads**) or/and reference transcripts with FASTA format. 
+     (2) RNA-Seq for calculating expression abundance and read coverage of transcripts are used the data used in *de novo* assembly. Thus, users only require to input the newly assembled transcripts from unmapped reads (generated from the function **Assemble Unmapped Reads**) or/and reference transcripts with FASTA format. 
 
   ![expression-level](https://github.com/cma2015/CAFU/blob/master/CAFU_images/18.png)
   
@@ -456,13 +456,13 @@ In this module, we provide an example for each function to show how to perform u
 
   Then four outputs will be returned:
 
-  ```Differential expression transcript information```: Information of differential expression (DE) transcripts filtered by user-specific criteria, including transcript ID, FDR, fold change, etc.
+  ```Differential expression transcript information```, Information of differential expression (DE) transcripts filtered by user-specific criteria, including transcript ID, FDR, fold change, etc.
 
-  ```Differential expression transcript ID```: IDs of DE transcripts filtered by differential expression criteria.
+  ```Differential expression transcript ID```, IDs of DE transcripts filtered by differential expression criteria.
 
-  ```Expression value of all transcripts```: Expression abundance matrix of **all transcripts** with the rows as transcripts and the columns as samples.
+  ```Expression value of all transcripts```, Expression abundance matrix of **all transcripts** with the rows as transcripts and the columns as samples.
 
-  ```Expression value of DE transcripts```: Expression abundance matrix of **DE transcripts** with the rows as transcripts and the columns as samples.
+  ```Expression value of DE transcripts```, Expression abundance matrix of **DE transcripts** with the rows as transcripts and the columns as samples.
 
 ### FUNCTION ANNOTATION OF ASSEMBLED TRANSCRIPTS
 
@@ -471,6 +471,10 @@ In this module, we provide an example for each function to show how to perform u
   In this function, co-expression network and GO enrichment analysis are used to annotate transcripts using "WGCNA" and "topGO", respectively.
 
   In this tutorial, we used the file ```differentially_expressed_transcript_expression``` located in ```/your directory/CAFU/test_data/others/``` to perform co-expression network and GO enrichment analysis (see figure below).
+  
+  **Note:** (1) For testing this function with the file ```differentially_expressed_transcript_expression``` , the parameter ```Minimum number of expressed samples``` should be set as ```32```;
+  
+     (2) It is necessary to ensure the computer is connected to the network.
 
   ![Co-expression and GO](https://github.com/cma2015/CAFU/blob/master/CAFU_images/20.png)
 
