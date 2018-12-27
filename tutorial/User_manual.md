@@ -45,7 +45,7 @@
   Next, Click the button **Choose local file** and select a file you would like to upload (e.g. upload the file ```mapping_info``` in the directory ```/your directory/CAFU/test_data/SE RNA-Seq/```), you will see the following interface:
 
   
-  ![Upload regular file](https://github.com/cma2015/CAFU/blob/master/CAFU_images/4.png)
+  ![Upload regular file](https://github.com/cma2015/CAFU/blob/master/CAFU_images/Picture7.png)
 
   
   Then click **Start** to upload file.
@@ -157,7 +157,7 @@ In this module, we provide an example for each module to show how to use to perf
   SRR2144443;maize
   ```
  
-  ![Extrat unmapped reads](https://github.com/cma2015/CAFU/blob/master/CAFU_images/12.png)
+  ![Extrat unmapped reads](https://github.com/cma2015/CAFU/blob/master/CAFU_images/Picture8.png)
 
 
   Then click **Execute** to start extracting unmapped reads using CAFU. After finishing this process, the final unmapped reads named as ```all_unmapped_reads.fastq``` and the number of unmapped reads per sample named as ```Status_of_number_of_unmapped_reads``` (see figure below) will be returned.
@@ -343,7 +343,7 @@ In this module, we provide an example for each module to show how to use to perf
 
   This function allows users to explore the amino-acid features similarity used in SAT between assembled and reference transcripts.
 
-  Here, we take an example (see figure below) to show how to use this function to compare k-mer frequency of assembled and reference transcripts. **Input 1** and **Input 2** are located in the folder ```/your directory/CAFU/test_data/others/assembled_transcript.fasta``` and ```/your directory/CAFU/test_data/Transcripts/ref_trans.fasta.zip```
+  Here, we take an example (see figure below) to show how to use this function to compare k-mer frequency of assembled and reference transcripts. **Input 1** and **Input 2** are located in the folder ```/your directory/CAFU/test_data/others/assembled_transcript.fasta``` and ```/your directory/CAFU/test_data/Transcripts/ref_trans.fasta.zip```, respectively.
 
   ![nucleic-acid feature](https://github.com/cma2015/CAFU/blob/master/CAFU_images/Picture4.png)
   
