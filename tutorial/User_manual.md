@@ -169,7 +169,7 @@ In this module, we provide an example for each function to show how to perform u
 
   As unmapped reads may result from contamination during sampling or RNA-Seq. In this function, potential contamination sequences are removed using Deconseq (Schmieder *et al*., 2011) with user-defined coverage and identity (e.g., 95) by aligning unmapped reads generated from the function Extract Unmapped Reads to a contamination database.
   
-  In the current version of CAFU, users can submit a customized contamination reference genome sequences to CAFU to generate a contamination database. Besides, we also provide a default contamination database contains 3,529 bacterial and 81 viral reference genomes (downloaded from NCBI on 2018/11/05).
+  In the current version of CAFU, users can submit a file of customized contamination reference genome sequences to CAFU to generate a contamination database. Besides, we also provide a default contamination database contains 3,529 bacterial and 81 viral reference genomes (downloaded from NCBI on 2018/11/05).
 
   Here we use the ```Customized contamination database and single-end unmapped reads``` as an example (see figure below):
   
