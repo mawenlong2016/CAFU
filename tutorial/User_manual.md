@@ -83,7 +83,7 @@
 
 
 ### UNMAPPED READ EXTRACTION
-In this module, we provide an example for each module to show how to use to perform unmapped reads extraction.
+In this module, we provide an example for each function to show how to perform unmapped reads extraction.
 - **Quality control**
 
   In this function, we implemented FastQC (Andrews *et al*., 2010) to enable users to perform quality control. In this tutorial, we will use a list of single-end RNA-Seq collection file (located in the folder ```/your directory/CAFU/test_data/SE RNA-Seq/```) to perform quality control.
