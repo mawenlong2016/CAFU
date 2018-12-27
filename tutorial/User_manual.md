@@ -428,9 +428,9 @@ In this module, we provide an example for each function to show how to perform u
 
    Then two outputs will be returned:
 
-   ```Condition specific transcritps information```: Information of condition-specific transcripts, including condition-specific transcript ID and corresponding specifically expressed condition.
+   ```Condition specific transcritp information```, Information of condition-specific transcripts, including condition-specific transcript ID and corresponding specifically expressed condition.
 
-   ```Expression heatmap condition-specific transcritps```: Digital plot of condition-specific transcript expression.
+   ```Expression heatmap condition-specific transcritps```, Digital plot of condition-specific transcript expression.
 
 - **Analyze Heterogeneous**
 
@@ -444,7 +444,7 @@ In this module, we provide an example for each function to show how to perform u
 
   **Output 1**: ```Gini Coefficient of assembled transcripts```, A tab seperated matrix contains transcript ID, and corresponding Gini Coefficient.
 
-  **Output 2**: ```Plot of Gini coefficient of assembled transcripts```: Scatter diagram of Gini coefficient of each assembled transcript.
+  **Output 2**: ```Plot of Gini coefficient of assembled transcripts```, Scatter diagram of Gini coefficient of each assembled transcript.
 
 - **Analyze Differential Expression**
 
