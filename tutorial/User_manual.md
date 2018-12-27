@@ -140,7 +140,7 @@ In this module, we provide an example for each function to show how to perform u
   
   **Input 1:** A **collection** of reference genome. Upload files (```maize.fa.zip```) in directory ```/your directory/CAFU/test_data/genomes/``` as a collection named as ```Ref_Genome``` (user-defined name). See section **Upload a collection** to learn how to upload a collection.
   
-  **Input 2:** A **collection** of trimmed single-end RNA-Seq files (```Trimmed_DATA_ID.fastq```) generated from **Trim Raw Reads**.
+  **Input 2:** A **collection** of trimmed single-end RNA-Seq files (```Trimmed_SRR2144443.fastq```) generated from **Trim Raw Reads**.
   
   **Input 3:** A **regular** file containing mapping-operation information. Upload the file in directory ```/your directory/CAFU/test_data/SE RNA-Seq/mapping_info``` as a regular file.
   
