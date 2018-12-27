@@ -364,6 +364,7 @@ In this module, we provide an example for each function to show how to perform u
     ```Reference transcript K-mer (k = 1)```, K-mer frequency of transcripts from the existing genome annotation.
 
     ```Assembled transcript K-mer (k = 2)```, K-mer frequency of assembled transcripts (or confident/novel transcripts) derived from unmapped reads.
+    
     ```Reference transcript K-mer (k = 2)```, K-mer frequency of transcripts from the existing genome annotation.
   - **For DR**
 
