@@ -520,7 +520,7 @@ In this module, we provide an example for each function to show how to perform u
 
 - **Extract Sequences**
 
-  This function is provided for extracting transcripts sequences which includes three sub-functions:
+  This function is provided for extracting transcript sequences which includes three sub-functions:
   - **Extract sub-sequences according to sequence ID from a fasta file**: This function can be used for extracting sub-sequences (e.g. novel transcripts) from a fasta file (e.g. assembled transcript sequences) according to specified sequence ID (e.g. novel transcript ID);
   - **Extract transcripts according to GTF/GFF from reference genome sequences**: This function is used for extracting transcript sequences from reference genome according to genome annotation file (GTF/GFF);
   - **Build all transcripts file**: This function is used for combining reference and assembled transcripts.
