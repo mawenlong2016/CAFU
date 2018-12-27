@@ -428,7 +428,7 @@ In this module, we provide an example for each function to show how to perform u
 
    Then two outputs will be returned:
 
-   ```Condition specific transcritp information```, Information of condition-specific transcripts, including condition-specific transcript ID and corresponding specifically expressed condition.
+   ```Condition specific transcript information```, Information of condition-specific transcripts, including condition-specific transcript ID and corresponding specifically expressed condition.
 
    ```Expression heatmap condition-specific transcritps```, Digital plot of condition-specific transcript expression.
 
