@@ -371,7 +371,7 @@ In this module, we provide an example for each function to show how to perform u
 
   This function is used to detect alternative splicing events in assembled transcripts using an R package SGSeq (Goldstein *et al*., 2016).
 
-  The only input of this function is GFF/GTF annotation file, here we use the test data located in ```/your directory/CAFU/test_data/others/AS_test.gtf.zip``` to run this function.
+  The only input of this function is GFF/GTF annotation file, here we use the test data ```AS_test.gtf.zip``` located in ```/your directory/CAFU/test_data/others/``` to run this function.
 
   ![nucleic-acid feature](https://github.com/cma2015/CAFU/blob/master/CAFU_images/28.png)
 
