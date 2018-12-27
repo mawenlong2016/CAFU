@@ -384,7 +384,7 @@ In this module, we provide an example for each function to show how to perform u
 ### EXPRESSION PROFILES OF ASSEMBLED TRANSCRIPTS
 - **Analyze Condition Specificity**
 
-  This function identifies a set of transcripts highly expressed under different conditions. The condition specificity of a transcript for condition type T is defined using the formula described in (Ma et al., 2014).
+  This function identifies a set of transcripts highly expressed under different conditions. The condition specificity of a transcript is defined using the formula described in (Ma *et al*., 2014).
 
   Here, we use the test data ```assembled_transcript_expression, RNA-Seq_sample_information``` in the folder ```/your directory/CAFU/test_data/others/``` to show its usage (see figure below).
 
@@ -392,7 +392,7 @@ In this module, we provide an example for each function to show how to perform u
 
    Then two outputs will be returned:
 
-   ```Condition specific transcript information```, Information of condition-specific transcripts, including condition-specific transcript ID and corresponding specifically expressed condition.
+   ```Condition specific transcript information```, Information of condition-specific transcripts, including condition-specific transcript ID and corresponding specifically condition.
 
    ```Expression heatmap condition-specific transcritps```, Digital plot of condition-specific transcript expression.
 
