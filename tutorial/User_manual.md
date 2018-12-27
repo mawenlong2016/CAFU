@@ -428,7 +428,7 @@ In this module, we provide an example for each function to show how to perform u
 
 ### FUNCTION ANNOTATION OF ASSEMBLED TRANSCRIPTS
 
-- Co-expression and GO
+- Co-expression and Gene Ontology Enrichment Analysis
 
   In this function, co-expression network and GO enrichment analysis are used to annotate transcripts using "WGCNA" and "topGO", respectively.
 
