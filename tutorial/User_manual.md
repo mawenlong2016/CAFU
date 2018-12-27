@@ -414,17 +414,15 @@ In this module, we provide an example for each function to show how to perform u
 
   This function integrates RSEM (Li *et al*., 2011) and EBSeq (Leng *et al*., 2013) to identify differential expression transcripts.
   
-  Here, we use the test data ```assembled_transcript.fasta``` in the folder ```/your directory/CAFU/test_data/others/```, and the same collection (```SE-RNA-Seq```) with **Quality control** to show its usage (see figure below). Sample information ```DE_info``` is in the folder ```/your directory/CAFU/test_data/SE RNA-Seq/```.
+  Here, we use the test data ```assembled_transcript.fasta``` in the folder ```/your directory/CAFU/test_data/others/```, and the same collection (```SE-RNA-Seq```) with **Quality control** to show its usage (see figure below). RNA-Seq sample experiment information ```DE_info``` is in the folder ```/your directory/CAFU/test_data/SE RNA-Seq/```.
 
  ![nucleic-acid feature](https://github.com/cma2015/CAFU/blob/master/CAFU_images/Picture6.png) 
 
   Then four outputs will be returned:
 
-  ```Differential expression transcript information```, Information of differential expression (DE) transcripts filtered by user-specific criteria, including transcript ID, FDR, fold change, etc.
+  ```Differential expression transcript information```, Information of differential expression (DE) transcripts filtered by user-defined criteria, including transcript ID, FDR, fold change, etc.
 
   ```Differential expression transcript ID```, IDs of DE transcripts filtered by differential expression criteria.
-
-  ```Expression value of all transcripts```, Expression abundance matrix of **all transcripts** with the rows as transcripts and the columns as samples.
 
   ```Expression value of DE transcripts```, Expression abundance matrix of **DE transcripts** with the rows as transcripts and the columns as samples.
 
