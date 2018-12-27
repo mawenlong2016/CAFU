@@ -314,11 +314,11 @@ In this module, we provide an example for each function to show how to perform u
 
 - **Characterize Nucleic-acid Feature**
 
-  This function allows users to explore the nucleic-acid similarity between assembled and reference transcripts in terms of the distribution of transcript length and G+C content.
+  This function allows users to characterize the nucleic-acid-based features between assembled and reference transcripts in terms of transcript length and GC content
 
-  In this function, two features can be analyzed (see figure below). To run this function, two inputs are required including:
+  To run this function, two inputs are required including:
 
-  **Input 1**: The sequences of assembled transcripts (or confident/novel transcripts) derived from unmapped reads. Test data (```assembled_transcript.fasta```) is in directory ```/your directory/CAFU/test_data/others/```.
+  **Input 1**: Assembled transcript sequences generated from the function Assemble Unmapped Reads. Test data (```assembled_transcript.fasta```) is in directory ```/your directory/CAFU/test_data/others/```.
   
   **Input 2**: The sequences of transcripts from the existing genome annotation. Test data (```ref_trans.fasta.zip```) is in directory ```/your directory/CAFU/test_data/Transcripts/```.
 
@@ -328,16 +328,15 @@ In this module, we provide an example for each function to show how to perform u
 
   - **For Transcript length**
 
-    ```Assembled transcript length```, Length of assembled transcripts (or confident/novel transcripts) derived from unmapped reads.
-
+    ```Assembled transcript length```, Length of *de novo*-assembled transcripts generated from the function Assemble Unmapped Reads.
+    
     ```Reference transcript length```, Length of transcripts from the existing genome annotation.
 
     ```Length distribution comparison```, Length distribution comparison between assembled transcripts and reference transcript.
 
   - **For GC content**
 
-
-    ```Assembled transcript GC content```, GC content of assembled transcripts (or confident/novel transcripts) derived from unmapped reads.
+    ```Assembled transcript GC content```, GC content of *de novo*-assembled transcripts generated from the function Assemble Unmapped Reads.
 
     ```Reference transcript GC content```, GC content of transcripts from the existing genome annotation.
 
