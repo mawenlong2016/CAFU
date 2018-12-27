@@ -329,25 +329,25 @@ In this module, we provide an example for each function to show how to perform u
 
   - **For Transcript length**
 
-    **Assembled transcript length**: Length of assembled transcripts (or confident/novel transcripts) derived from unmapped reads.
+    ```Assembled transcript length```, Length of assembled transcripts (or confident/novel transcripts) derived from unmapped reads.
 
-    **Reference transcript length**: Length of transcripts from the existing genome annotation.
+    ```Reference transcript length```, Length of transcripts from the existing genome annotation.
 
-    **Length distribution comparison**: Length distribution comparison between assembled transcripts and reference transcript.
+    ```Length distribution comparison```, Length distribution comparison between assembled transcripts and reference transcript.
 
   - **For GC content**
 
 
-    **Assembled transcript GC content**: GC content of assembled transcripts (or confident/novel transcripts) derived from unmapped reads.
+    ```Assembled transcript GC content```, GC content of assembled transcripts (or confident/novel transcripts) derived from unmapped reads.
 
-    **Reference transcript GC content**: GC content of transcripts from the existing genome annotation.
+    ```Reference transcript GC content```, GC content of transcripts from the existing genome annotation.
 
-    **Length distribution comparison**: GC content distribution comparison between assembled transcripts and reference transcript.
+    ```Length distribution comparison```, GC content distribution comparison between assembled transcripts and reference transcript.
 
 
 - **Characterize Amino-acid Feature**
 
-  This function allows users to explore the amino-acid features similarity used in SAT between assembled and reference transcripts.
+  This function allows users to characterize the amino-acid-based features implemented in BioSeq-Analysis (Liu et al., 2017) between assembled and reference transcripts.
 
   Here, we take an example (see figure below) to show how to use this function to compare k-mer frequency of assembled and reference transcripts. **Input 1** and **Input 2** are located in the folder ```/your directory/CAFU/test_data/others/assembled_transcript.fasta``` and ```/your directory/CAFU/test_data/Transcripts/ref_trans.fasta.zip```, respectively.
 
@@ -359,48 +359,48 @@ In this module, we provide an example for each function to show how to perform u
   
   - **For Kmer**
 
-    ```Assembled transcript K-mer (k = 1)```: K-mer frequency of assembled transcripts (or confident/novel transcripts) derived from unmapped reads.
+    ```Assembled transcript K-mer (k = 1)```, K-mer frequency of assembled transcripts (or confident/novel transcripts) derived from unmapped reads.
 
-    ```Reference transcript K-mer (k = 1)```: K-mer frequency of transcripts from the existing genome annotation.
+    ```Reference transcript K-mer (k = 1)```, K-mer frequency of transcripts from the existing genome annotation.
 
-    ```Assembled transcript K-mer (k = 2)```: K-mer frequency of assembled transcripts (or confident/novel transcripts) derived from unmapped reads.
-    ```Reference transcript K-mer (k = 2)```: K-mer frequency of transcripts from the existing genome annotation.
+    ```Assembled transcript K-mer (k = 2)```, K-mer frequency of assembled transcripts (or confident/novel transcripts) derived from unmapped reads.
+    ```Reference transcript K-mer (k = 2)```, K-mer frequency of transcripts from the existing genome annotation.
   - **For DR**
 
-    ```Assembled transcript DR```: Distance-based residues encoding of assembled transcripts (or confident/novel transcripts) derived from unmapped reads.
+    ```Assembled transcript DR```, Distance-based residues encoding of assembled transcripts (or confident/novel transcripts) derived from unmapped reads.
 
-    ```Reference transcript DR```: Distance-based residues encoding of transcripts from the existing genome annotation.
+    ```Reference transcript DR```, Distance-based residues encoding of transcripts from the existing genome annotation.
   - **For AC**
 
-    ```Assembled transcript AC```: Auto-covariance encoding of assembled transcripts (or confident/novel transcripts) derived from unmapped reads.
+    ```Assembled transcript AC```, Auto-covariance encoding of assembled transcripts (or confident/novel transcripts) derived from unmapped reads.
 
-    ```Reference transcript AC```: Auto-covariance encoding of transcripts from the existing genome annotation.
+    ```Reference transcript AC```, Auto-covariance encoding of transcripts from the existing genome annotation.
   - **For CC**
 
-    ```Assembled transcript CC```: Cross-covariance encoding of assembled transcripts (or confident/novel transcripts) derived from unmapped reads
+    ```Assembled transcript CC```, Cross-covariance encoding of assembled transcripts (or confident/novel transcripts) derived from unmapped reads
     
-    ```Reference transcript CC```: Cross-covariance encoding of transcripts from the existing genome annotation.
+    ```Reference transcript CC```, Cross-covariance encoding of transcripts from the existing genome annotation.
   - **For ACC**
 
-    ```Assembled transcript ACC```: Auto-cross-covariance encoding of assembled transcripts (or confident/novel transcripts) derived from unmapped reads.
+    ```Assembled transcript ACC```, Auto-cross-covariance encoding of assembled transcripts (or confident/novel transcripts) derived from unmapped reads.
 
-    ```Reference transcript ACC```: Auto-cross-covariance encoding of transcripts from the existing genome annotation.
+    ```Reference transcript ACC```, Auto-cross-covariance encoding of transcripts from the existing genome annotation.
   - **PDT**
 
-    ```Assembled transcript PDT```: Kmer of assembled transcripts (or confident/novel transcripts) derived from unmapped reads.
+    ```Assembled transcript PDT```, Kmer of assembled transcripts (or confident/novel transcripts) derived from unmapped reads.
 
-    ```Reference transcript PDT```: Kmer of transcripts from the existing genome annotation.
+    ```Reference transcript PDT```, Kmer of transcripts from the existing genome annotation.
 
   - **For PC-PseAAC**
 
-    ```Assembled transcript PC-PseAAC```: Physicochemical distance transformation encoding of assembled transcripts (or confident/novel transcripts) derived from unmapped reads.
+    ```Assembled transcript PC-PseAAC```, Physicochemical distance transformation encoding of assembled transcripts (or confident/novel transcripts) derived from unmapped reads.
 
-    ```Reference transcript PC-PseAAC```: Physicochemical distance transformation encoding of transcripts from the existing genome annotation.
+    ```Reference transcript PC-PseAAC```, Physicochemical distance transformation encoding of transcripts from the existing genome annotation.
   - **For SC-PseAAC**
 
-    ```Assembled transcript SC-PseAAC```: General series correlation pseudo amino acid composition encoding of assembled transcripts (or confident/novel transcripts) derived from unmapped reads.
+    ```Assembled transcript SC-PseAAC```, General series correlation pseudo amino acid composition encoding of assembled transcripts (or confident/novel transcripts) derived from unmapped reads.
 
-    ```Reference transcript SC-PseAAC```: General series correlation pseudo amino acid composition encoding of transcripts from the existing genome annotation.
+    ```Reference transcript SC-PseAAC```, General series correlation pseudo amino acid composition encoding of transcripts from the existing genome annotation.
 
 - **Detect Alternative Splicing Events**
 
