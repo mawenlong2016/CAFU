@@ -398,7 +398,7 @@ In this module, we provide an example for each function to show how to perform u
 
 - **Analyze Heterogeneous**
 
-  This function examines the stability of each transcript using its expression values in all samples and Gini index (coefficient) according to (O'Hagan *et al*., 2017).
+  This function examines the stability of each transcript using its expression values in all samples by the Gini index (coefficient) according to (O'Hagan *et al*., 2017).
 
   To run this function, the only required input is the ```Transcript expression abundance matrix```, which is a tab seperated expression abundance matrix with the rows as transcripts and the columns as samples. Here, we still use the sample data ```assembled_transcript_expression``` in the folder ```/your directory/CAFU/test_data/others/``` to show its usage (see figure below).
 
