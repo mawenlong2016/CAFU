@@ -168,15 +168,17 @@ In this module, we provide an example for each function to show how to perform u
 
 - **Remove Contamination**
 
-  Considering that sequences obtained from impure nucleic acid preparations may contain DNA from sources other than the sample. Those sequence contaminations are a serious concern to the quality of the data used for downstream analysis. So in this function, potential contamination sequences are removed using Deconseq (Schmieder *et al*., 2011) with user-defined coverage and identity (e.g., 0.95) by aligning input reads to a contamination database. In the current version of CAFU, 3,529 bacterial and 81 viral reference genomes (downloaded from NCBI on 2018/11/05) are provided as default, however, user-defined contamination database is also supported. 
+  As unmapped reads may result from contamination during sampling or RNA-Seq. Those sequence contaminations are a serious concern to the quality of the data used for downstream analysis. So in this function, potential contamination sequences are removed using Deconseq (Schmieder *et al*., 2011) with user-defined coverage and identity (e.g., 0.95) by aligning input unmapped reads to a contamination database. In the current version of CAFU, 3,529 bacterial and 81 viral reference genomes (downloaded from NCBI on 2018/11/05) are provided as default, however, user-defined contamination database is also supported. 
 
-  Here we use the ```Default contamination and single-end unmapped reads``` as an example (see figure below):
+  Here we use the ```Customized contamination and single-end unmapped reads``` as an example (see figure below):
+  
+  **Input 1:** A **regular** file of contamination sequences. Upload files (```Cont_seq.fasta```) in directory ```/your directory/CAFU/test_data/others/``` as a regular file.
+  
+  **Input 2:** A **regular** file of unmapped reads ```all_unmapped_reads.fastq``` generated from the last step **Extract Unmapped Reads**.
 
   ![remove contamination](https://github.com/cma2015/CAFU/blob/master/CAFU_images/Picture9.png)
 
-
-  Then the clean reads with FASTQ format will be returned.
-
+  Click **Execute**, and then the clean reads with FASTQ format will be returned.
 
 ###  *DE NOVO* TRANSCRIPT ASSEMBLY OF UNMAPPED READS
 - **Assemble Unmapped Reads**
