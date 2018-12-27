@@ -499,9 +499,9 @@ In this module, we provide an example for each function to show how to perform u
 
   To run this function, there are two required inputs (see figure below) including:
 
-  **Input 1**: ```assembled_transcript_expression``` in the folder ```/your directory/CAFU/test_data/others/```, Expression abundance matrix with the rows as transcripts and the columns as samples.
+  **Input 1**: ```assembled_transcript_expression``` in the folder ```/your directory/CAFU/test_data/others/```.
 
-  **Input 2**: RNA-Seq sample batch effect information ```batch information.txt``` is in the folder ```/your directory/CAFU/test_data/others/```.
+  **Input 2**: RNA-Seq sample batch effect information ```Batch information.zip``` is in the folder ```/your directory/CAFU/test_data/others/```.
   
   - **Expample:** Number 1, 2, 3 represent different experiments. The batch information should be:
     ```bash
@@ -527,17 +527,17 @@ In this module, we provide an example for each function to show how to perform u
 
   For **Extract sub-sequences according to sequence ID from a fasta file**, there are two required inputs including:
   
-  **Input 1**: ```All assembled transcript sequences```: This file can be generated from the function **Assemble Unmapped Reads**.
+  **Input 1**: ```All assembled transcript sequences```, This file can be generated from the function **Assemble Unmapped Reads**.
   
-  **Input 2**: ```Novel transcript ID```: IDs of novel transcripts. (This file can be generated from the module **iii) Evidence support of assembled transcripts**).
+  **Input 2**: ```Novel transcript ID```, IDs of novel transcripts. (This file can be generated from the module **iii) Evidence support of assembled transcripts**).
   
   Then the target transcript sequence file named as ```Sequences of novel transcripts``` will be returned.
   
   For **Extract transcripts according to GTF/GFF from reference genome sequence**, there are also two required inputs including:
   
-  **Input 1**: ```Reference genome sequence```: Sequences of reference genome including all chromosome.
+  **Input 1**: ```Reference genome sequence```, Sequences of reference genome including all chromosome.
   
-  **Input 2**: ```Reference genome annotation```: Corresponding reference genome annotation file with reference genome.
+  **Input 2**: ```Reference genome annotation```, Corresponding reference genome annotation file with reference genome.
   
   Then the target transcript sequence file named as ```Sequences of reference transcripts``` will be returned.
   
