@@ -279,11 +279,11 @@ In this module, we provide an example for each function to show how to perform u
 
   Then three outputs will be returned:
 
-  **Output 1**: CPC2 output. A tab seperated matrix contains seven columns. Each column shows the sequence ID, putative peptide length, Fickett score, isoelectric point, the integrity of the orf, coding probability and the coding/noncoding classification label. More details about this output can be seen from [CPC2 official website](http://cpc2.cbi.pku.edu.cn/help.php). 
+  **Output 1**: ```CPC2 output```, A tab seperated matrix contains seven columns. Each column shows the sequence ID, putative peptide length, Fickett score, isoelectric point, the integrity of the orf, coding probability and the coding/noncoding classification label. More details about this output can be seen from [CPC2 official website](http://cpc2.cbi.pku.edu.cn/help.php). 
 
-  **Output 2**: Confident transcript ID. 
+  **Output 2**: ```Confident transcript ID```, IDs of transcripts that could be translated to protein.. 
 
-  **Output 3**: A tab seperated matrix contains transcript ID, alignment start, alignment end, envelope start, envelope end, Hmm access, Hmm name, Type of domain, Hmm start, Hmm end, Hmm length, Bit score, E-value, Significance, Clan, etc.
+  **Output 3**: ```Confidence assembly transcript pfam results```, A tab seperated matrix contains transcript ID, alignment start, alignment end, envelope start, envelope end, Hmm access, Hmm name, Type of domain, Hmm start, Hmm end, Hmm length, Bit score, E-value, Significance, Clan, etc.
 
 
 ### SPECIES ASSIGNMENT OF ASSEMBLED TRANSCRIPTS
