@@ -88,7 +88,7 @@ In this module, we provide an example for each function to show how to perform u
 
   In this function, we implemented FastQC (Andrews *et al*., 2010) to enable users to perform quality control. In this tutorial, we will use a list of single-end RNA-Seq collection file (located in the folder ```/your directory/CAFU/test_data/SE RNA-Seq/```) to perform quality control.
   
-  To run this module correctly, upload the files in the folder ```/your directory/CAFU/test_data/SE RNA-Seq/``` with **ZIP** suffix as a collection named as ```SE-RNA-Seq```（see section **Upload a collection** to see how to upload a list of RNA-Seq datasets as a collection).
+  To run this function correctly, upload the files in the folder ```/your directory/CAFU/test_data/SE RNA-Seq/``` with **ZIP** suffix as a collection named as ```SE-RNA-Seq```（see section **Upload a collection** to see how to upload a list of RNA-Seq datasets as a collection).
 
   
   ![Quality control](https://github.com/cma2015/CAFU/blob/master/CAFU_images/9.png)
