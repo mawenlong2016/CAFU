@@ -241,9 +241,9 @@ In this module, we provide an example for each function to show how to perform u
 
   **Output 2**: ```Confident transcript information```: Confident transcript information filtered by high coverage and identity.
 
-  **Output 3**: ```The same/similar-intron transcript ID```: Assembled transcript ID which possess the same/similar intron with corresponding species reference transcripts.
+  **Output 3**: ```The same/similar-intron transcript ID```: Assembled transcript IDs which possess the same/similar intron with corresponding species reference transcripts.
 
-  **Output 4**: ```Novel transcript ID```: Novel transcripts missing in the existing genome annotation.
+  **Output 4**: ```Novel transcript ID```: IDs of novel transcripts missing in the existing genome annotation.
 
 - **Transcript-level Evidence**
 
@@ -251,9 +251,9 @@ In this module, we provide an example for each function to show how to perform u
   
   To run this function, at least two inputs are required including:
 
-  **Input 1**: Reference sequence of well-annotated transcripts, such as full-length transcripts generated from single-molecule real-time sequencing and/or high-quality transcripts annotated in closely related species. Upload files (```ref_trans.fasta.zip, ref_trans_1.fasta.zip```) in directory ```/your directory/CAFU/test_data/Transcripts/``` as a collection named as ```Well-annotated transcript sequences``` (user-defined name).
+  **Input 1**: A **collection** of reference sequence of well-annotated transcripts, such as full-length transcripts generated from single-molecule real-time sequencing and/or high-quality transcripts annotated in closely related species. Upload files (```ref_trans.fasta.zip, ref_trans_1.fasta.zip```) in directory ```/your directory/CAFU/test_data/Transcripts/``` as a collection named as ```Well-annotated transcript sequences``` (user-defined name).
 
-  **Input 2**: Assembled transcript sequences generated from the function **Assemble Unmapped Reads**. Test data (```assembled_transcript.fasta```) is in directory ```/your directory/CAFU/test_data/others/```.
+  **Input 2**: A **regular** file of assembled transcript sequences generated from the function **Assemble Unmapped Reads**. Test data (```assembled_transcript.fasta```) is in directory ```/your directory/CAFU/test_data/others/```.
 
 
    ![genome-level](https://github.com/cma2015/CAFU/blob/master/CAFU_images/22.png) 
@@ -269,11 +269,11 @@ In this module, we provide an example for each function to show how to perform u
 
 - **Protein-level Evidence**
 
-  In this function, coding potential evidence of transcripts is fistly evaluated using CPC2 (Kang *et al*., 2017). Then for coding transcripts, Pfam (Finn *et al*., 2014) will be used to identify the protein families. 
+  In this function, coding potential evidence of transcripts is fistly evaluated using CPC2 (Kang *et al*., 2017). Then for coding transcripts, Pfam (Finn *et al*., 2014) will be used to identify putative domains of corresponding protein. 
   
   Here, we use the file ```/your directory/CAFU/test_data/others/assembled_transcript.fasta``` to execute this function (see figure below).
   
-  For testing CAFU, we suggest users run this function using **Unmapped_reads_de_novo_assembled_transcripts** generated from the function **Assemble Unmapped Reads**. 
+  **Note:** For testing CAFU, we suggest users running this function using **Unmapped_reads_de_novo_assembled_transcripts** generated from the function **Assemble Unmapped Reads** to reduce test time. 
 
   ![assembled transcripts](https://github.com/cma2015/CAFU/blob/master/CAFU_images/Picture3.png) 
 
