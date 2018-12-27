@@ -86,7 +86,7 @@
 In this module, we provide an example for each function to show how to perform unmapped reads extraction.
 - **Quality control**
 
-  In this function, we implemented FastQC (Andrews *et al*., 2010) to enable users to perform quality control. In this tutorial, we will use a list of single-end RNA-Seq collection file (located in the folder ```/your directory/CAFU/test_data/SE RNA-Seq/```) to perform quality control.
+  In this function, we implemented FastQC (Andrews *et al*., 2010) to enable users to perform quality control on RNA-Seq data. In this tutorial, we will use a list of single-end RNA-Seq collection file (located in the folder ```/your directory/CAFU/test_data/SE RNA-Seq/```) to perform quality control.
   
   To run this function correctly, upload the files in the folder ```/your directory/CAFU/test_data/SE RNA-Seq/``` with **ZIP** suffix as a collection named as ```SE-RNA-Seq```（see section **Upload a collection** to see how to upload a list of RNA-Seq datasets as a collection).
 
@@ -101,13 +101,12 @@ In this module, we provide an example for each function to show how to perform u
   - Per base sequence quality
   - Per sequence quality scores
   - Per base sequence content
-  - Per base GC content
   - Per sequence GC content
   - Per base N content
   - Sequence Length Distribution
   - Sequence Duplication Levels
   - Overrepresented sequences
-  - Kmer Content
+  - Adapter Content
 
   You can access the output by click results in the history pannel (see figure below).
 
