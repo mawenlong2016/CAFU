@@ -172,7 +172,7 @@ In this module, we provide an example for each module to show how to use to perf
 
   Here we use the ```Default contamination and single-end unmapped reads``` as an example (see figure below):
 
-  ![remove contamination](https://github.com/cma2015/CAFU/blob/master/CAFU_images/Picture1.png)
+  ![remove contamination](https://github.com/cma2015/CAFU/blob/master/CAFU_images/Picture9.png)
 
 
   Then the clean reads with FASTQ format will be returned.
