@@ -109,7 +109,7 @@ In this module, we provide an example for each function to show how to perform u
   - Overrepresented sequences
   - Kmer Content
 
-  You can access the output by click results in the right history bar (see figure below).
+  You can access the output by click results in the history pannel (see figure below).
 
 
   ![Quality control](https://github.com/cma2015/CAFU/blob/master/CAFU_images/10.png)
