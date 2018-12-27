@@ -198,7 +198,9 @@ In this module, we provide an example for each module to show how to use to perf
 
   This functione allows users to eliminate assembled transcripts with low read coverage and/or low expression abundance, which are likely assembly artifacts. RNA-Seq reads used for **Assemble Unmapped Reads** are mapped with newly assembled transcripts or/and reference transcripts by using bowtie2 (Langmead et al., 2012). CAFU outputs the read coverage of assembled transcripts at single-base resolution using BEDTools (Quinlan et al., 2010), and estimates the expression abundance of all transcripts in terms of FPKM (Fragments Per Kilobase Million) using RSEM (Li et al., 2011). Assembled transcripts with low read coverage (e.g., less than 10) and/or low expression (e.g., FPKM less than 1) in the majority of samples (e.g., 80%) are discarded.
 
-  **NOTE:** For testing CAFU, we suggest users run this function using **Unmapped_reads_de_novo_assembled_transcripts** generated from the last step **Assemble Unmapped Reads**. RNA-Seq for calculating expression abundance and read coverage of transcripts are used the data used in *de novo* assembly. Thus, users only require to input the newly assembled transcripts from unmapped reads (generated from the function **Assemble Unmapped Reads**) or/and reference transcripts with FASTA format. 
+  **NOTE:** (1) For testing CAFU, we suggest users run this function using **Unmapped_reads_de_novo_assembled_transcripts** generated from the last step **Assemble Unmapped Reads**. 
+            
+     (2)RNA-Seq for calculating expression abundance and read coverage of transcripts are used the data used in *de novo* assembly. Thus, users only require to input the newly assembled transcripts from unmapped reads (generated from the function **Assemble Unmapped Reads**) or/and reference transcripts with FASTA format. 
 
   ![expression-level](https://github.com/cma2015/CAFU/blob/master/CAFU_images/18.png)
   
@@ -268,6 +270,8 @@ In this module, we provide an example for each module to show how to use to perf
   In this function, coding potential evidence of transcripts is fistly evaluated using CPC2 (Kang *et al*., 2017). Then for coding transcripts, Pfam (Finn *et al*., 2014) will be used to identify the protein families. 
   
   Here, we use the file ```/your directory/CAFU/test_data/others/assembled_transcript.fasta``` to execute this function (see figure below).
+  
+  For testing CAFU, we suggest users run this function using **Unmapped_reads_de_novo_assembled_transcripts** generated from the function **Assemble Unmapped Reads**. 
 
   ![assembled transcripts](https://github.com/cma2015/CAFU/blob/master/CAFU_images/Picture3.png) 
 
