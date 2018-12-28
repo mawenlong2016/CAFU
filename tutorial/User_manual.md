@@ -23,7 +23,7 @@
 #### Download CAFU test data
 - Download test data from [CAFU GitHub project](https://github.com/cma2015/CAFU). Click **Clone or download** (see figure below), and download the ZIP compressed files into your local device and then uncompress it. 
 
-  ![Download data](https://github.com/cma2015/CAFU/blob/master/CAFU_images/1.png)
+  ![Download data](https://github.com/cma2015/CAFU/blob/master/CAFU_USERMANNUAL_IMAGE/Fig1.png)
 
 
 - For users who installed [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03), the following command can be used to download CAFU project to local device.
